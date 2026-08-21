@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Élanora Events - Elegant birthday, anniversary and corporate event planning services.">
+    <meta name="keywords"
+        content="event planner, birthday planner, anniversary events, corporate events, event decoration">
+    <meta name="author" content="Élanora Events">
+
+    <!-- Page Title -->
+    <title>Élanora Events</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="elanora-dashboard-body">
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="elanora-dashboard-sidebar" id="dashboardSidebar">
+
+
+        <!-- SIDEBAR TOP -->
+
+        <div class="elanora-sidebar-top">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="elanora-dashboard-logo">
+
+                <img src="images/logo-light.png" alt="Élanora Events">
+
+            </a>
+
+
+            <!-- MOBILE CLOSE -->
+
+            <button type="button" class="elanora-sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SIDEBAR MENU
+             ================================================= -->
+
+        <nav class="elanora-dashboard-nav">
+
+
+            <!-- OVERVIEW -->
+
+            <a href="dashboard.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- MY EVENT -->
+
+            <a href="d2.html" class="elanora-dashboard-link">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span>
+                    My Event
+                </span>
+
+            </a>
+
+
+            <!-- DECORATION -->
+
+            <a href="d3.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <span>
+                    Decoration Theme
+                </span>
+
+            </a>
+
+
+            <!-- VENDORS -->
+
+            <a href="d4.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-users-gear"></i>
+
+                <span>
+                    Vendor Assignments
+                </span>
+
+            </a>
+
+
+            <!-- TIMELINE -->
+
+            <a href="d5.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>
+                    Event Timeline
+                </span>
+
+            </a>
+
+
+            <!-- PAYMENTS -->
+
+            <a href="d6.html" class="elanora-dashboard-link active">
+
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                <span>
+                    Payments & Invoices
+                </span>
+
+            </a>
+
+
+            <!-- MESSAGES -->
+
+            <a href="d7.html" class="elanora-dashboard-link">
+
+                <i class="fa-regular fa-comments"></i>
+
+                <span>
+                    Messages
+                </span>
+
+            </a>
+
+
+        </nav>
+
+        <div class="elanora-mobile-sidebar-controls">
+
+            <!-- NOTIFICATION + SETTINGS ROW -->
+
+            <div class="elanora-mobile-sidebar-icon-row">
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="elanora-mobile-sidebar-control" aria-label="Notifications">
+
+                    <span class="elanora-mobile-control-icon">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="elanora-mobile-notification-count">
+                            3
+                        </span>
+
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="elanora-mobile-sidebar-control" aria-label="Settings">
+
+                    <span class="elanora-mobile-control-icon">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <button type="button" class="elanora-mobile-sidebar-profile" aria-label="Client profile">
+
+                <img src="images/client-profile.jpg" alt="Olivia Carter">
+
+                <span>
+
+                    <strong>
+                        Olivia Carter
+                    </strong>
+
+                    <small>
+                        Client Profile
+                    </small>
+
+                </span>
+
+            </button>
+
+        </div>
+
+        <!-- =================================================
+             SIDEBAR BOTTOM
+             ================================================= -->
+
+        <div class="elanora-sidebar-bottom">
+
+
+            <!-- LOGOUT -->
+
+            <button type="button" class="elanora-dashboard-logout" id="dashboardLogout">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MOBILE SIDEBAR OVERLAY
+         ===================================================== -->
+
+    <div class="elanora-sidebar-overlay" id="sidebarOverlay"></div>
+
+
+
+    <!-- =====================================================
+         DASHBOARD MAIN
+         ===================================================== -->
+
+    <div class="elanora-dashboard-main">
+
+
+        <!-- =================================================
+             FIXED HEADER
+             ================================================= -->
+
+        <header class="elanora-dashboard-header">
+
+
+            <!-- LEFT -->
+
+            <div class="elanora-dashboard-header-left">
+
+
+                <!-- MOBILE MENU -->
+
+                <button type="button" class="elanora-dashboard-menu-toggle" id="sidebarOpen" aria-label="Open sidebar">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div class="elanora-dashboard-page-title">
+
+                    <span>
+                        CLIENT DASHBOARD
+                    </span>
+
+                    <h1>
+                        Payments
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT -->
+
+            <div class="elanora-dashboard-header-right">
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="elanora-dashboard-header-btn elanora-notification-btn"
+                    aria-label="3 notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="elanora-notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="elanora-dashboard-header-btn" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+
+                <!-- DARK MODE -->
+
+                <button type="button" class="elanora-dashboard-header-btn" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+
+                <button type="button" class="elanora-dashboard-header-btn" id="dashboardRtlToggle"
+                    aria-label="Toggle RTL mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- CLIENT PROFILE -->
+
+                <button type="button" class="elanora-dashboard-profile" aria-label="Client profile">
+
+                    <img src="images/client-profile.jpg" alt="Olivia Carter">
+
+                    <span>
+                        Olivia Carter
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================================================
+     PAYMENTS & INVOICES PAGE
+     ========================================================= -->
+
+        <main class="elanora-dashboard-content">
+
+
+            <!-- =====================================================
+         SECTION 01 — PAYMENT OVERVIEW
+         ===================================================== -->
+
+            <section class="elanora-payment-overview">
+
+                <div class="elanora-payment-overview-intro">
+
+                    <span>
+                        EVENT FINANCES
+                    </span>
+
+                    <h2>
+                        Your payments,
+                        <strong>kept simple.</strong>
+                    </h2>
+
+                    <p>
+                        Keep track of your event investment, completed
+                        payments and remaining balance from one place.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-payment-summary">
+
+
+                    <!-- TOTAL COST -->
+
+                    <div class="elanora-payment-summary-item">
+
+                        <span>
+                            TOTAL EVENT COST
+                        </span>
+
+                        <strong>
+                            ₹1,85,000
+                        </strong>
+
+                    </div>
+
+
+                    <!-- PAID -->
+
+                    <div class="elanora-payment-summary-item">
+
+                        <span>
+                            AMOUNT PAID
+                        </span>
+
+                        <strong>
+                            ₹1,20,000
+                        </strong>
+
+                    </div>
+
+
+                    <!-- BALANCE -->
+
+                    <div class="elanora-payment-summary-item">
+
+                        <span>
+                            BALANCE DUE
+                        </span>
+
+                        <strong>
+                            ₹65,000
+                        </strong>
+
+                    </div>
+
+
+                    <!-- NEXT PAYMENT -->
+
+                    <div class="elanora-payment-summary-item">
+
+                        <span>
+                            NEXT PAYMENT
+                        </span>
+
+                        <strong>
+                            15 Sep 2026
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 02 — PAYMENT PROGRESS
+         ===================================================== -->
+
+            <section class="elanora-payment-progress">
+
+
+                <div class="elanora-payment-progress-heading">
+
+                    <div>
+
+                        <span>
+                            PAYMENT STATUS
+                        </span>
+
+                        <h2>
+                            Your payment progress
+                        </h2>
+
+                    </div>
+
+                    <strong>
+                        65% Paid
+                    </strong>
+
+                </div>
+
+
+                <div class="elanora-payment-progress-bar">
+
+                    <div class="elanora-payment-progress-fill" style="width: 65%;"></div>
+
+                </div>
+
+
+                <div class="elanora-payment-progress-details">
+
+
+                    <div>
+
+                        <span>
+                            PAID
+                        </span>
+
+                        <strong>
+                            ₹1,20,000
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            REMAINING
+                        </span>
+
+                        <strong>
+                            ₹65,000
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            TOTAL
+                        </span>
+
+                        <strong>
+                            ₹1,85,000
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="elanora-payment-progress-note">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <p>
+                        Your next scheduled payment of
+                        <strong>₹40,000</strong> is due on
+                        <strong>15 September 2026</strong>.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 03 — INVOICES & DOCUMENTS
+         ===================================================== -->
+
+            <section class="elanora-invoice-section">
+
+
+                <div class="elanora-invoice-heading">
+
+                    <div>
+
+                        <span>
+                            FINANCIAL DOCUMENTS
+                        </span>
+
+                        <h2>
+                            Invoices & documents
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        View or download your event-related invoices
+                        whenever you need them.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-invoice-list">
+
+
+                    <!-- INVOICE 01 -->
+
+                    <article class="elanora-invoice-row">
+
+                        <div class="elanora-invoice-file-icon">
+
+                            <i class="fa-regular fa-file-lines"></i>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-info">
+
+                            <span>
+                                BOOKING INVOICE
+                            </span>
+
+                            <h3>
+                                Event Booking Confirmation
+                            </h3>
+
+                            <p>
+                                Invoice #ELN-INV-001 · 15 Aug 2026
+                            </p>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-amount">
+
+                            <strong>
+                                ₹50,000
+                            </strong>
+
+                            <span class="elanora-invoice-paid">
+                                Paid
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-actions">
+
+                            <a href="#" title="View Invoice">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </a>
+
+                            <a href="#" title="Download Invoice">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- INVOICE 02 -->
+
+                    <article class="elanora-invoice-row">
+
+                        <div class="elanora-invoice-file-icon">
+
+                            <i class="fa-regular fa-file-lines"></i>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-info">
+
+                            <span>
+                                DECORATION
+                            </span>
+
+                            <h3>
+                                Decoration & Styling Invoice
+                            </h3>
+
+                            <p>
+                                Invoice #ELN-INV-002 · 20 Aug 2026
+                            </p>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-amount">
+
+                            <strong>
+                                ₹45,000
+                            </strong>
+
+                            <span class="elanora-invoice-paid">
+                                Paid
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-actions">
+
+                            <a href="#" title="View Invoice">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </a>
+
+                            <a href="#" title="Download Invoice">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- INVOICE 03 -->
+
+                    <article class="elanora-invoice-row">
+
+                        <div class="elanora-invoice-file-icon">
+
+                            <i class="fa-regular fa-file-lines"></i>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-info">
+
+                            <span>
+                                VENDOR SERVICES
+                            </span>
+
+                            <h3>
+                                Vendor Coordination Invoice
+                            </h3>
+
+                            <p>
+                                Invoice #ELN-INV-003 · 28 Aug 2026
+                            </p>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-amount">
+
+                            <strong>
+                                ₹40,000
+                            </strong>
+
+                            <span class="elanora-invoice-pending">
+                                Pending
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-actions">
+
+                            <a href="#" title="View Invoice">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </a>
+
+                            <a href="#" title="Download Invoice">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- INVOICE 04 -->
+
+                    <article class="elanora-invoice-row upcoming">
+
+                        <div class="elanora-invoice-file-icon">
+
+                            <i class="fa-regular fa-file-lines"></i>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-info">
+
+                            <span>
+                                FINAL BALANCE
+                            </span>
+
+                            <h3>
+                                Final Event Invoice
+                            </h3>
+
+                            <p>
+                                Final invoice will be generated after
+                                the event plan is completed.
+                            </p>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-amount">
+
+                            <strong>
+                                ₹25,000
+                            </strong>
+
+                            <span class="elanora-invoice-upcoming">
+                                Upcoming
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-invoice-actions disabled">
+
+                            <a href="#" aria-disabled="true">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </a>
+
+                            <a href="#" aria-disabled="true">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 04 — PAYMENT SCHEDULE & HISTORY
+         ===================================================== -->
+
+            <section class="elanora-payment-schedule">
+
+
+                <div class="elanora-payment-schedule-intro">
+
+                    <span>
+                        PAYMENT PLAN
+                    </span>
+
+                    <h2>
+                        Payment schedule
+                    </h2>
+
+                    <p>
+                        Your event payments are divided into simple
+                        milestones so you always know what comes next.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-payment-history">
+
+
+                    <!-- PAYMENT 01 -->
+
+                    <div class="elanora-payment-history-item completed">
+
+                        <div class="elanora-payment-history-marker">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </div>
+
+
+                        <div class="elanora-payment-history-date">
+
+                            <strong>
+                                15
+                            </strong>
+
+                            <span>
+                                AUG 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-payment-history-content">
+
+                            <span>
+                                COMPLETED
+                            </span>
+
+                            <h3>
+                                Booking Advance
+                            </h3>
+
+                            <p>
+                                Initial booking payment received.
+                            </p>
+
+                        </div>
+
+
+                        <strong class="elanora-history-amount">
+                            ₹50,000
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- PAYMENT 02 -->
+
+                    <div class="elanora-payment-history-item completed">
+
+                        <div class="elanora-payment-history-marker">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </div>
+
+
+                        <div class="elanora-payment-history-date">
+
+                            <strong>
+                                20
+                            </strong>
+
+                            <span>
+                                AUG 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-payment-history-content">
+
+                            <span>
+                                COMPLETED
+                            </span>
+
+                            <h3>
+                                Theme & Planning Payment
+                            </h3>
+
+                            <p>
+                                Planning and decoration services payment.
+                            </p>
+
+                        </div>
+
+
+                        <strong class="elanora-history-amount">
+                            ₹70,000
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- PAYMENT 03 -->
+
+                    <div class="elanora-payment-history-item active">
+
+                        <div class="elanora-payment-history-marker">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                        </div>
+
+
+                        <div class="elanora-payment-history-date">
+
+                            <strong>
+                                15
+                            </strong>
+
+                            <span>
+                                SEP 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-payment-history-content">
+
+                            <span>
+                                NEXT PAYMENT
+                            </span>
+
+                            <h3>
+                                Vendor Coordination
+                            </h3>
+
+                            <p>
+                                Scheduled payment for confirmed vendor services.
+                            </p>
+
+                        </div>
+
+
+                        <strong class="elanora-history-amount">
+                            ₹40,000
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- PAYMENT 04 -->
+
+                    <div class="elanora-payment-history-item">
+
+                        <div class="elanora-payment-history-marker">
+
+                            <i class="fa-regular fa-circle"></i>
+
+                        </div>
+
+
+                        <div class="elanora-payment-history-date">
+
+                            <strong>
+                                05
+                            </strong>
+
+                            <span>
+                                OCT 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-payment-history-content">
+
+                            <span>
+                                UPCOMING
+                            </span>
+
+                            <h3>
+                                Final Balance
+                            </h3>
+
+                            <p>
+                                Remaining balance before the event day.
+                            </p>
+
+                        </div>
+
+
+                        <strong class="elanora-history-amount">
+                            ₹25,000
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         LOGOUT CONFIRMATION
+         ===================================================== -->
+
+    <div class="elanora-logout-modal" id="logoutModal">
+
+        <div class="elanora-logout-modal-overlay"></div>
+
+
+        <div class="elanora-logout-modal-card" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+
+            <div class="elanora-logout-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <h2 id="logoutTitle">
+                Logout?
+            </h2>
+
+
+            <p>
+                Are you sure you want to logout from your
+                client dashboard?
+            </p>
+
+
+            <div class="elanora-logout-actions">
+
+                <button type="button" class="elanora-logout-no" id="logoutNo">
+                    No
+                </button>
+
+
+                <button type="button" class="elanora-logout-yes" id="logoutYes">
+                    Yes, Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

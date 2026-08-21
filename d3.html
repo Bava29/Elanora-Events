@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Élanora Events - Elegant birthday, anniversary and corporate event planning services.">
+    <meta name="keywords"
+        content="event planner, birthday planner, anniversary events, corporate events, event decoration">
+    <meta name="author" content="Élanora Events">
+
+    <!-- Page Title -->
+    <title>Élanora Events</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="elanora-dashboard-body">
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="elanora-dashboard-sidebar" id="dashboardSidebar">
+
+
+        <!-- SIDEBAR TOP -->
+
+        <div class="elanora-sidebar-top">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="elanora-dashboard-logo">
+
+                <img src="images/logo-light.png" alt="Élanora Events">
+
+            </a>
+
+
+            <!-- MOBILE CLOSE -->
+
+            <button type="button" class="elanora-sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SIDEBAR MENU
+             ================================================= -->
+
+        <nav class="elanora-dashboard-nav">
+
+
+            <!-- OVERVIEW -->
+
+            <a href="dashboard.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- MY EVENT -->
+
+            <a href="d2.html" class="elanora-dashboard-link">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span>
+                    My Event
+                </span>
+
+            </a>
+
+
+            <!-- DECORATION -->
+
+            <a href="d3.html" class="elanora-dashboard-link active">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <span>
+                    Decoration Theme
+                </span>
+
+            </a>
+
+
+            <!-- VENDORS -->
+
+            <a href="d4.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-users-gear"></i>
+
+                <span>
+                    Vendor Assignments
+                </span>
+
+            </a>
+
+
+            <!-- TIMELINE -->
+
+            <a href="d5.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>
+                    Event Timeline
+                </span>
+
+            </a>
+
+
+            <!-- PAYMENTS -->
+
+            <a href="d6.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                <span>
+                    Payments & Invoices
+                </span>
+
+            </a>
+
+
+            <!-- MESSAGES -->
+
+            <a href="d7.html" class="elanora-dashboard-link">
+
+                <i class="fa-regular fa-comments"></i>
+
+                <span>
+                    Messages
+                </span>
+
+            </a>
+
+
+        </nav>
+
+        <div class="elanora-mobile-sidebar-controls">
+
+            <!-- NOTIFICATION + SETTINGS ROW -->
+
+            <div class="elanora-mobile-sidebar-icon-row">
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="elanora-mobile-sidebar-control" aria-label="Notifications">
+
+                    <span class="elanora-mobile-control-icon">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="elanora-mobile-notification-count">
+                            3
+                        </span>
+
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="elanora-mobile-sidebar-control" aria-label="Settings">
+
+                    <span class="elanora-mobile-control-icon">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <button type="button" class="elanora-mobile-sidebar-profile" aria-label="Client profile">
+
+                <img src="images/client-profile.jpg" alt="Olivia Carter">
+
+                <span>
+
+                    <strong>
+                        Olivia Carter
+                    </strong>
+
+                    <small>
+                        Client Profile
+                    </small>
+
+                </span>
+
+            </button>
+
+        </div>
+
+        <!-- =================================================
+             SIDEBAR BOTTOM
+             ================================================= -->
+
+        <div class="elanora-sidebar-bottom">
+
+
+            <!-- LOGOUT -->
+
+            <button type="button" class="elanora-dashboard-logout" id="dashboardLogout">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MOBILE SIDEBAR OVERLAY
+         ===================================================== -->
+
+    <div class="elanora-sidebar-overlay" id="sidebarOverlay"></div>
+
+
+
+    <!-- =====================================================
+         DASHBOARD MAIN
+         ===================================================== -->
+
+    <div class="elanora-dashboard-main">
+
+
+        <!-- =================================================
+             FIXED HEADER
+             ================================================= -->
+
+        <header class="elanora-dashboard-header">
+
+
+            <!-- LEFT -->
+
+            <div class="elanora-dashboard-header-left">
+
+
+                <!-- MOBILE MENU -->
+
+                <button type="button" class="elanora-dashboard-menu-toggle" id="sidebarOpen" aria-label="Open sidebar">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div class="elanora-dashboard-page-title">
+
+                    <span>
+                        CLIENT DASHBOARD
+                    </span>
+
+                    <h1>
+                        Decoration Theme
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT -->
+
+            <div class="elanora-dashboard-header-right">
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="elanora-dashboard-header-btn elanora-notification-btn"
+                    aria-label="3 notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="elanora-notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="elanora-dashboard-header-btn" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+
+                <!-- DARK MODE -->
+
+                <button type="button" class="elanora-dashboard-header-btn" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+
+                <button type="button" class="elanora-dashboard-header-btn" id="dashboardRtlToggle"
+                    aria-label="Toggle RTL mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- CLIENT PROFILE -->
+
+                <button type="button" class="elanora-dashboard-profile" aria-label="Client profile">
+
+                    <img src="images/client-profile.jpg" alt="Olivia Carter">
+
+                    <span>
+                        Olivia Carter
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================================================
+     DECORATION THEME PAGE
+     ========================================================= -->
+
+        <main class="elanora-dashboard-content">
+
+
+            <!-- =====================================================
+         SECTION 01 — CURRENT THEME
+         ===================================================== -->
+
+            <section class="elanora-theme-current">
+
+                <div class="elanora-theme-current-content">
+
+                    <span class="elanora-theme-eyebrow">
+                        YOUR SELECTED THEME
+                    </span>
+
+                    <h2>
+                        Elegant Garden
+                    </h2>
+
+                    <p>
+                        A refined floral celebration featuring soft
+                        textures, warm lighting and sophisticated garden
+                        inspired details.
+                    </p>
+
+
+                    <div class="elanora-theme-current-meta">
+
+                        <div>
+
+                            <span>
+                                THEME STATUS
+                            </span>
+
+                            <strong>
+                                Awaiting Approval
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                SELECTED ON
+                            </span>
+
+                            <strong>
+                                20 August 2026
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button type="button" class="elanora-theme-view-btn">
+
+                        View Full Theme
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="elanora-theme-current-visual">
+
+                    <img src="images/theme-elegant-garden.jpg" alt="Elegant Garden decoration theme">
+
+                    <div class="elanora-theme-visual-tag">
+                        CURRENT
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 02 — THEME OPTIONS
+         ===================================================== -->
+
+            <section class="elanora-theme-options">
+
+
+                <div class="elanora-theme-section-heading">
+
+                    <div>
+
+                        <span>
+                            CURATED FOR YOUR EVENT
+                        </span>
+
+                        <h2>
+                            Choose your decoration style
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Your planner has prepared these concepts based
+                        on your event preferences.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-theme-option-grid">
+
+
+                    <!-- THEME 01 -->
+
+                    <article class="elanora-theme-option-card selected">
+
+                        <div class="elanora-theme-option-image">
+
+                            <img src="images/theme-elegant-garden.jpg" alt="Elegant Garden theme">
+
+                            <span>
+                                SELECTED
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-theme-option-content">
+
+                            <span>
+                                CONCEPT 01
+                            </span>
+
+                            <h3>
+                                Elegant Garden
+                            </h3>
+
+                            <p>
+                                Soft florals, refined tablescapes and
+                                warm ambient lighting.
+                            </p>
+
+
+                            <button type="button" class="elanora-theme-select-btn">
+
+                                Selected
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- THEME 02 -->
+
+                    <article class="elanora-theme-option-card">
+
+                        <div class="elanora-theme-option-image">
+
+                            <img src="images/theme-luxe-evening.jpg" alt="Luxe Evening theme">
+
+                        </div>
+
+
+                        <div class="elanora-theme-option-content">
+
+                            <span>
+                                CONCEPT 02
+                            </span>
+
+                            <h3>
+                                Luxe Evening
+                            </h3>
+
+                            <p>
+                                Dramatic styling, statement florals and
+                                sophisticated evening details.
+                            </p>
+
+
+                            <button type="button" class="elanora-theme-select-btn">
+
+                                Select Theme
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- THEME 03 -->
+
+                    <article class="elanora-theme-option-card">
+
+                        <div class="elanora-theme-option-image">
+
+                            <img src="images/theme-modern-bloom.jpg" alt="Modern Bloom theme">
+
+                        </div>
+
+
+                        <div class="elanora-theme-option-content">
+
+                            <span>
+                                CONCEPT 03
+                            </span>
+
+                            <h3>
+                                Modern Bloom
+                            </h3>
+
+                            <p>
+                                Contemporary floral styling with clean
+                                forms and playful celebration details.
+                            </p>
+
+
+                            <button type="button" class="elanora-theme-select-btn">
+
+                                Select Theme
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 03 — THEME DETAILS
+         ===================================================== -->
+
+            <section class="elanora-theme-details">
+
+
+                <div class="elanora-theme-details-heading">
+
+                    <span>
+                        THEME BREAKDOWN
+                    </span>
+
+                    <h2>
+                        Elegant Garden
+                    </h2>
+
+                    <p>
+                        Here is how your selected concept will come
+                        together on your celebration day.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-theme-detail-grid">
+
+
+                    <!-- COLOR PALETTE -->
+
+                    <div class="elanora-theme-detail-card">
+
+                        <div class="elanora-theme-detail-icon">
+
+                            <i class="fa-solid fa-palette"></i>
+
+                        </div>
+
+                        <span>
+                            COLOR PALETTE
+                        </span>
+
+                        <h3>
+                            Soft Plum & Champagne
+                        </h3>
+
+
+                        <div class="elanora-theme-swatches">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FLORAL -->
+
+                    <div class="elanora-theme-detail-card">
+
+                        <div class="elanora-theme-detail-icon">
+
+                            <i class="fa-solid fa-leaf"></i>
+
+                        </div>
+
+                        <span>
+                            FLORAL DESIGN
+                        </span>
+
+                        <h3>
+                            Fresh Seasonal Florals
+                        </h3>
+
+                        <p>
+                            Table arrangements, entrance styling and
+                            floral focal points.
+                        </p>
+
+                    </div>
+
+
+                    <!-- LIGHTING -->
+
+                    <div class="elanora-theme-detail-card">
+
+                        <div class="elanora-theme-detail-icon">
+
+                            <i class="fa-regular fa-lightbulb"></i>
+
+                        </div>
+
+                        <span>
+                            LIGHTING
+                        </span>
+
+                        <h3>
+                            Warm Ambient Glow
+                        </h3>
+
+                        <p>
+                            Soft hanging lights and warm decorative
+                            illumination throughout the venue.
+                        </p>
+
+                    </div>
+
+
+                    <!-- TABLESCAPE -->
+
+                    <div class="elanora-theme-detail-card">
+
+                        <div class="elanora-theme-detail-icon">
+
+                            <i class="fa-solid fa-champagne-glasses"></i>
+
+                        </div>
+
+                        <span>
+                            TABLESCAPE
+                        </span>
+
+                        <h3>
+                            Refined Garden Dining
+                        </h3>
+
+                        <p>
+                            Coordinated linens, floral centerpieces and
+                            elegant table accents.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 04 — APPROVAL
+         ===================================================== -->
+
+            <section class="elanora-theme-approval">
+
+
+                <div class="elanora-theme-approval-icon">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                </div>
+
+
+                <div class="elanora-theme-approval-content">
+
+                    <span>
+                        FINAL CLIENT REVIEW
+                    </span>
+
+                    <h2>
+                        Are you happy with this decoration concept?
+                    </h2>
+
+                    <p>
+                        Approve this theme to allow our planning team
+                        to proceed with vendor coordination and final
+                        decoration preparation.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-theme-approval-actions">
+
+                    <button type="button" class="elanora-theme-change-btn">
+
+                        Request Changes
+
+                    </button>
+
+
+                    <button type="button" class="elanora-theme-approve-btn">
+
+                        Approve Theme
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         LOGOUT CONFIRMATION
+         ===================================================== -->
+
+    <div class="elanora-logout-modal" id="logoutModal">
+
+        <div class="elanora-logout-modal-overlay"></div>
+
+
+        <div class="elanora-logout-modal-card" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+
+            <div class="elanora-logout-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <h2 id="logoutTitle">
+                Logout?
+            </h2>
+
+
+            <p>
+                Are you sure you want to logout from your
+                client dashboard?
+            </p>
+
+
+            <div class="elanora-logout-actions">
+
+                <button type="button" class="elanora-logout-no" id="logoutNo">
+                    No
+                </button>
+
+
+                <button type="button" class="elanora-logout-yes" id="logoutYes">
+                    Yes, Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

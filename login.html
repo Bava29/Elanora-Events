@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Élanora Events - Elegant birthday, anniversary and corporate event planning services.">
+    <meta name="keywords"
+        content="event planner, birthday planner, anniversary events, corporate events, event decoration">
+    <meta name="author" content="Élanora Events">
+
+    <!-- Page Title -->
+    <title>Élanora Events</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="elanora-auth-body">
+
+
+    <!-- =====================================================
+         TOP RIGHT CONTROLS
+         ===================================================== -->
+
+    <div class="elanora-auth-controls">
+
+        <!-- DARK MODE -->
+        <button type="button" class="elanora-auth-control" id="authThemeToggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+
+        <!-- RTL -->
+        <button type="button" class="elanora-auth-control" id="authRtlToggle" aria-label="Toggle RTL mode">
+            <i class="fa-solid fa-right-left"></i>
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         LOGIN PAGE
+         ===================================================== -->
+
+    <main class="elanora-auth-page">
+
+
+        <!-- LOGIN CARD -->
+
+        <div class="elanora-auth-card">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="elanora-auth-logo">
+
+                <img src="images/logo.png" alt="Élanora Events">
+
+            </a>
+
+
+
+            <!-- HEADING -->
+
+            <div class="elanora-auth-heading">
+
+                <h1>
+                    Welcome back
+                </h1>
+
+                <p>
+                    Sign in to continue planning your celebration.
+                </p>
+
+            </div>
+
+
+
+            <!-- LOGIN FORM -->
+
+            <form class="elanora-auth-form" action="#" method="post">
+
+
+                <!-- EMAIL -->
+
+                <div class="elanora-auth-field">
+
+                    <label for="login-email">
+                        Email Address
+                    </label>
+
+                    <div class="elanora-auth-input-wrap">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input type="email" id="login-email" name="email" placeholder="Enter your email"
+                            autocomplete="email" required>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="elanora-auth-field">
+
+                    <label for="login-password">
+                        Password
+                    </label>
+
+                    <div class="elanora-auth-input-wrap">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password"
+                            autocomplete="current-password" required>
+
+                        <button type="button" class="elanora-password-toggle" data-target="login-password"
+                            aria-label="Show password">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- REMEMBER + FORGOT -->
+
+                <div class="elanora-auth-options">
+
+                    <label class="elanora-remember">
+
+                        <input type="checkbox" name="remember">
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+
+                    <a href="#" class="elanora-forgot-password">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button type="submit" class="elanora-auth-submit">
+
+                    Login
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- DIVIDER -->
+
+            <div class="elanora-auth-divider">
+
+                <span>
+                    Or continue with
+                </span>
+
+            </div>
+
+
+
+            <!-- SOCIAL LOGIN -->
+
+            <div class="elanora-auth-social">
+
+
+                <!-- GOOGLE -->
+
+                <a href="#" class="elanora-social-google" aria-label="Continue with Google">
+
+                    <img src="images/google-logo.svg" alt="Google">
+
+                </a>
+
+
+                <!-- FACEBOOK -->
+
+                <a href="#" class="elanora-social-facebook" aria-label="Continue with Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a href="#" class="elanora-social-instagram" aria-label="Continue with Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+
+                <!-- WHATSAPP -->
+
+                <a href="#" class="elanora-social-whatsapp" aria-label="Continue with WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- REGISTER LINK -->
+
+            <div class="elanora-auth-switch">
+
+                <span>
+                    Don't have an account?
+                </span>
+
+                <a href="register.html">
+                    Create an account
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

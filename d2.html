@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Élanora Events - Elegant birthday, anniversary and corporate event planning services.">
+    <meta name="keywords"
+        content="event planner, birthday planner, anniversary events, corporate events, event decoration">
+    <meta name="author" content="Élanora Events">
+
+    <!-- Page Title -->
+    <title>Élanora Events</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="elanora-dashboard-body">
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="elanora-dashboard-sidebar" id="dashboardSidebar">
+
+
+        <!-- SIDEBAR TOP -->
+
+        <div class="elanora-sidebar-top">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="elanora-dashboard-logo">
+
+                <img src="images/logo-light.png" alt="Élanora Events">
+
+            </a>
+
+
+            <!-- MOBILE CLOSE -->
+
+            <button type="button" class="elanora-sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SIDEBAR MENU
+             ================================================= -->
+
+        <nav class="elanora-dashboard-nav">
+
+
+            <!-- OVERVIEW -->
+
+            <a href="dashboard.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- MY EVENT -->
+
+            <a href="d2.html" class="elanora-dashboard-link active">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span>
+                    My Event
+                </span>
+
+            </a>
+
+
+            <!-- DECORATION -->
+
+            <a href="d3.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <span>
+                    Decoration Theme
+                </span>
+
+            </a>
+
+
+            <!-- VENDORS -->
+
+            <a href="d4.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-users-gear"></i>
+
+                <span>
+                    Vendor Assignments
+                </span>
+
+            </a>
+
+
+            <!-- TIMELINE -->
+
+            <a href="d5.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>
+                    Event Timeline
+                </span>
+
+            </a>
+
+
+            <!-- PAYMENTS -->
+
+            <a href="d6.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                <span>
+                    Payments & Invoices
+                </span>
+
+            </a>
+
+
+            <!-- MESSAGES -->
+
+            <a href="d7.html" class="elanora-dashboard-link">
+
+                <i class="fa-regular fa-comments"></i>
+
+                <span>
+                    Messages
+                </span>
+
+            </a>
+
+
+        </nav>
+
+        <div class="elanora-mobile-sidebar-controls">
+
+            <!-- NOTIFICATION + SETTINGS ROW -->
+
+            <div class="elanora-mobile-sidebar-icon-row">
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="elanora-mobile-sidebar-control" aria-label="Notifications">
+
+                    <span class="elanora-mobile-control-icon">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="elanora-mobile-notification-count">
+                            3
+                        </span>
+
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="elanora-mobile-sidebar-control" aria-label="Settings">
+
+                    <span class="elanora-mobile-control-icon">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <button type="button" class="elanora-mobile-sidebar-profile" aria-label="Client profile">
+
+                <img src="images/client-profile.jpg" alt="Olivia Carter">
+
+                <span>
+
+                    <strong>
+                        Olivia Carter
+                    </strong>
+
+                    <small>
+                        Client Profile
+                    </small>
+
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             SIDEBAR BOTTOM
+             ================================================= -->
+
+        <div class="elanora-sidebar-bottom">
+
+
+            <!-- LOGOUT -->
+
+            <button type="button" class="elanora-dashboard-logout" id="dashboardLogout">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MOBILE SIDEBAR OVERLAY
+         ===================================================== -->
+
+    <div class="elanora-sidebar-overlay" id="sidebarOverlay"></div>
+
+
+
+    <!-- =====================================================
+         DASHBOARD MAIN
+         ===================================================== -->
+
+    <div class="elanora-dashboard-main">
+
+
+        <!-- =================================================
+             FIXED HEADER
+             ================================================= -->
+
+        <header class="elanora-dashboard-header">
+
+
+            <!-- LEFT -->
+
+            <div class="elanora-dashboard-header-left">
+
+
+                <!-- MOBILE MENU -->
+
+                <button type="button" class="elanora-dashboard-menu-toggle" id="sidebarOpen" aria-label="Open sidebar">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div class="elanora-dashboard-page-title">
+
+                    <span>
+                        CLIENT DASHBOARD
+                    </span>
+
+                    <h1>
+                        Events
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT -->
+
+            <div class="elanora-dashboard-header-right">
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="elanora-dashboard-header-btn elanora-notification-btn"
+                    aria-label="3 notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="elanora-notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="elanora-dashboard-header-btn" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+
+                <!-- DARK MODE -->
+
+                <button type="button" class="elanora-dashboard-header-btn" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+
+                <button type="button" class="elanora-dashboard-header-btn" id="dashboardRtlToggle"
+                    aria-label="Toggle RTL mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- CLIENT PROFILE -->
+
+                <button type="button" class="elanora-dashboard-profile" aria-label="Client profile">
+
+                    <img src="images/client-profile.jpg" alt="Olivia Carter">
+
+                    <span>
+                        Olivia Carter
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </header>
+
+        <!-- =========================================================
+     MY EVENT PAGE
+     ========================================================= -->
+
+        <main class="elanora-dashboard-content">
+
+
+            <!-- =====================================================
+         SECTION 01 — EVENT PROFILE
+         ===================================================== -->
+
+            <section class="elanora-event-profile-panel">
+
+                <div class="elanora-event-profile-cover">
+
+                    <div class="elanora-event-profile-label">
+                        MY EVENT
+                    </div>
+
+                    <h2>
+                        Olivia's Birthday Celebration
+                    </h2>
+
+                    <p>
+                        A beautifully planned celebration created around
+                        your vision, style and special moments.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-event-profile-meta">
+
+
+                    <div class="elanora-event-meta-item">
+
+                        <span>
+                            EVENT TYPE
+                        </span>
+
+                        <strong>
+                            Birthday Celebration
+                        </strong>
+
+                    </div>
+
+
+                    <div class="elanora-event-meta-item">
+
+                        <span>
+                            BOOKING ID
+                        </span>
+
+                        <strong>
+                            ELN-2026-0184
+                        </strong>
+
+                    </div>
+
+
+                    <div class="elanora-event-meta-item">
+
+                        <span>
+                            EVENT STATUS
+                        </span>
+
+                        <strong class="elanora-event-status-active">
+                            Planning In Progress
+                        </strong>
+
+                    </div>
+
+
+                    <div class="elanora-event-meta-item">
+
+                        <span>
+                            EVENT DATE
+                        </span>
+
+                        <strong>
+                            18 October 2026
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 02 — VENUE & SCHEDULE
+         ===================================================== -->
+
+            <section class="elanora-event-location-section">
+
+
+                <div class="elanora-event-section-heading">
+
+                    <div>
+
+                        <span>
+                            EVENT LOCATION
+                        </span>
+
+                        <h2>
+                            Venue & Schedule
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="elanora-event-location-grid">
+
+
+                    <!-- VENUE CARD -->
+
+                    <article class="elanora-event-venue-card">
+
+                        <div class="elanora-event-card-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                CELEBRATION VENUE
+                            </span>
+
+                            <h3>
+                                The Grand Celebration Hall
+                            </h3>
+
+                            <p>
+                                24 Rosewood Avenue,<br>
+                                Chennai, Tamil Nadu 600018
+                            </p>
+
+                            <a href="#">
+
+                                View Location
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SCHEDULE CARD -->
+
+                    <article class="elanora-event-schedule-card">
+
+                        <div class="elanora-event-card-icon">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                        </div>
+
+
+                        <div class="elanora-event-schedule-content">
+
+                            <span>
+                                EVENT SCHEDULE
+                            </span>
+
+
+                            <div class="elanora-schedule-row">
+
+                                <div>
+
+                                    <strong>
+                                        02:00 PM
+                                    </strong>
+
+                                    <span>
+                                        Decoration Setup
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+
+                            <div class="elanora-schedule-row">
+
+                                <div>
+
+                                    <strong>
+                                        05:30 PM
+                                    </strong>
+
+                                    <span>
+                                        Guest Arrival
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+
+                            <div class="elanora-schedule-row">
+
+                                <div>
+
+                                    <strong>
+                                        06:00 PM
+                                    </strong>
+
+                                    <span>
+                                        Celebration Begins
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+
+                            <div class="elanora-schedule-row">
+
+                                <div>
+
+                                    <strong>
+                                        09:30 PM
+                                    </strong>
+
+                                    <span>
+                                        Event Ends
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 03 — GUEST & CELEBRATION DETAILS
+         ===================================================== -->
+
+            <section class="elanora-celebration-details">
+
+
+                <div class="elanora-event-section-heading">
+
+                    <div>
+
+                        <span>
+                            CELEBRATION DETAILS
+                        </span>
+
+                        <h2>
+                            Your event at a glance
+                        </h2>
+
+                    </div>
+
+                    <a href="#">
+                        Edit Details
+                        <i class="fa-solid fa-pen"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="elanora-celebration-grid">
+
+
+                    <!-- GUESTS -->
+
+                    <div class="elanora-celebration-info">
+
+                        <div class="elanora-celebration-info-icon">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <span>
+                            EXPECTED GUESTS
+                        </span>
+
+                        <strong>
+                            120
+                        </strong>
+
+                        <p>
+                            Guests confirmed for the celebration
+                        </p>
+
+                    </div>
+
+
+                    <!-- AGE GROUP -->
+
+                    <div class="elanora-celebration-info">
+
+                        <div class="elanora-celebration-info-icon">
+
+                            <i class="fa-solid fa-cake-candles"></i>
+
+                        </div>
+
+                        <span>
+                            CELEBRATION FOR
+                        </span>
+
+                        <strong>
+                            25th Birthday
+                        </strong>
+
+                        <p>
+                            A milestone birthday celebration
+                        </p>
+
+                    </div>
+
+
+                    <!-- STYLE -->
+
+                    <div class="elanora-celebration-info">
+
+                        <div class="elanora-celebration-info-icon">
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        </div>
+
+                        <span>
+                            EVENT STYLE
+                        </span>
+
+                        <strong>
+                            Elegant Garden
+                        </strong>
+
+                        <p>
+                            Soft, floral and sophisticated styling
+                        </p>
+
+                    </div>
+
+
+                    <!-- SPECIAL REQUIREMENT -->
+
+                    <div class="elanora-celebration-info">
+
+                        <div class="elanora-celebration-info-icon">
+
+                            <i class="fa-solid fa-heart"></i>
+
+                        </div>
+
+                        <span>
+                            SPECIAL REQUEST
+                        </span>
+
+                        <strong>
+                            Custom Cake Table
+                        </strong>
+
+                        <p>
+                            Dedicated setup for the celebration cake
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 04 — EVENT COORDINATOR
+         ===================================================== -->
+
+            <section class="elanora-event-coordinator">
+
+
+                <div class="elanora-coordinator-intro">
+
+                    <span>
+                        YOUR EVENT TEAM
+                    </span>
+
+                    <h2>
+                        Meet your coordinator
+                    </h2>
+
+                    <p>
+                        Your dedicated coordinator is overseeing the
+                        planning, vendors and execution of your event.
+                    </p>
+
+
+                    <a href="#">
+
+                        Message Coordinator
+
+                        <i class="fa-regular fa-comments"></i>
+
+                    </a>
+
+                </div>
+
+
+                <div class="elanora-coordinator-profile">
+
+
+                    <div class="elanora-coordinator-person">
+
+                        <img src="images/event-coordinator.jpg" alt="Event Coordinator">
+
+
+                        <div>
+
+                            <span>
+                                EVENT COORDINATOR
+                            </span>
+
+                            <h3>
+                                Sophia Williams
+                            </h3>
+
+                            <p>
+                                Senior Event Planner
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="elanora-coordinator-contact">
+
+
+                        <a href="tel:+919876543210">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <span>
+                                +91 98765 43210
+                            </span>
+
+                        </a>
+
+
+                        <a href="mailto:sophia@elanoraevents.com">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <span>
+                                sophia@elanoraevents.com
+                            </span>
+
+                        </a>
+
+
+                        <div class="elanora-coordinator-availability">
+
+                            <i class="fa-solid fa-circle"></i>
+
+                            Available for assistance
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         LOGOUT CONFIRMATION
+         ===================================================== -->
+
+    <div class="elanora-logout-modal" id="logoutModal">
+
+        <div class="elanora-logout-modal-overlay"></div>
+
+
+        <div class="elanora-logout-modal-card" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+
+            <div class="elanora-logout-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <h2 id="logoutTitle">
+                Logout?
+            </h2>
+
+
+            <p>
+                Are you sure you want to logout from your
+                client dashboard?
+            </p>
+
+
+            <div class="elanora-logout-actions">
+
+                <button type="button" class="elanora-logout-no" id="logoutNo">
+                    No
+                </button>
+
+
+                <button type="button" class="elanora-logout-yes" id="logoutYes">
+                    Yes, Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

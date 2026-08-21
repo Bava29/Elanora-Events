@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Élanora Events - Elegant birthday, anniversary and corporate event planning services.">
+    <meta name="keywords"
+        content="event planner, birthday planner, anniversary events, corporate events, event decoration">
+    <meta name="author" content="Élanora Events">
+
+    <!-- Page Title -->
+    <title>Élanora Events</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="elanora-dashboard-body">
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="elanora-dashboard-sidebar" id="dashboardSidebar">
+
+
+        <!-- SIDEBAR TOP -->
+
+        <div class="elanora-sidebar-top">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="elanora-dashboard-logo">
+
+                <img src="images/logo-light.png" alt="Élanora Events">
+
+            </a>
+
+
+            <!-- MOBILE CLOSE -->
+
+            <button type="button" class="elanora-sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SIDEBAR MENU
+             ================================================= -->
+
+        <nav class="elanora-dashboard-nav">
+
+
+            <!-- OVERVIEW -->
+
+            <a href="dashboard.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- MY EVENT -->
+
+            <a href="d2.html" class="elanora-dashboard-link">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span>
+                    My Event
+                </span>
+
+            </a>
+
+
+            <!-- DECORATION -->
+
+            <a href="d3.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <span>
+                    Decoration Theme
+                </span>
+
+            </a>
+
+
+            <!-- VENDORS -->
+
+            <a href="d4.html" class="elanora-dashboard-link active">
+
+                <i class="fa-solid fa-users-gear"></i>
+
+                <span>
+                    Vendor Assignments
+                </span>
+
+            </a>
+
+
+            <!-- TIMELINE -->
+
+            <a href="d5.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>
+                    Event Timeline
+                </span>
+
+            </a>
+
+
+            <!-- PAYMENTS -->
+
+            <a href="d6.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                <span>
+                    Payments & Invoices
+                </span>
+
+            </a>
+
+
+            <!-- MESSAGES -->
+
+            <a href="d7.html" class="elanora-dashboard-link">
+
+                <i class="fa-regular fa-comments"></i>
+
+                <span>
+                    Messages
+                </span>
+
+            </a>
+
+
+        </nav>
+
+        <div class="elanora-mobile-sidebar-controls">
+
+            <!-- NOTIFICATION + SETTINGS ROW -->
+
+            <div class="elanora-mobile-sidebar-icon-row">
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="elanora-mobile-sidebar-control" aria-label="Notifications">
+
+                    <span class="elanora-mobile-control-icon">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="elanora-mobile-notification-count">
+                            3
+                        </span>
+
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="elanora-mobile-sidebar-control" aria-label="Settings">
+
+                    <span class="elanora-mobile-control-icon">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <button type="button" class="elanora-mobile-sidebar-profile" aria-label="Client profile">
+
+                <img src="images/client-profile.jpg" alt="Olivia Carter">
+
+                <span>
+
+                    <strong>
+                        Olivia Carter
+                    </strong>
+
+                    <small>
+                        Client Profile
+                    </small>
+
+                </span>
+
+            </button>
+
+        </div>
+
+        <!-- =================================================
+             SIDEBAR BOTTOM
+             ================================================= -->
+
+        <div class="elanora-sidebar-bottom">
+
+
+            <!-- LOGOUT -->
+
+            <button type="button" class="elanora-dashboard-logout" id="dashboardLogout">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MOBILE SIDEBAR OVERLAY
+         ===================================================== -->
+
+    <div class="elanora-sidebar-overlay" id="sidebarOverlay"></div>
+
+
+
+    <!-- =====================================================
+         DASHBOARD MAIN
+         ===================================================== -->
+
+    <div class="elanora-dashboard-main">
+
+
+        <!-- =================================================
+             FIXED HEADER
+             ================================================= -->
+
+        <header class="elanora-dashboard-header">
+
+
+            <!-- LEFT -->
+
+            <div class="elanora-dashboard-header-left">
+
+
+                <!-- MOBILE MENU -->
+
+                <button type="button" class="elanora-dashboard-menu-toggle" id="sidebarOpen" aria-label="Open sidebar">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div class="elanora-dashboard-page-title">
+
+                    <span>
+                        CLIENT DASHBOARD
+                    </span>
+
+                    <h1>
+                        Vendor
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT -->
+
+            <div class="elanora-dashboard-header-right">
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="elanora-dashboard-header-btn elanora-notification-btn"
+                    aria-label="3 notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="elanora-notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="elanora-dashboard-header-btn" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+
+                <!-- DARK MODE -->
+
+                <button type="button" class="elanora-dashboard-header-btn" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+
+                <button type="button" class="elanora-dashboard-header-btn" id="dashboardRtlToggle"
+                    aria-label="Toggle RTL mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- CLIENT PROFILE -->
+
+                <button type="button" class="elanora-dashboard-profile" aria-label="Client profile">
+
+                    <img src="images/client-profile.jpg" alt="Olivia Carter">
+
+                    <span>
+                        Olivia Carter
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </header>
+
+
+        <main class="elanora-dashboard-content">
+
+            <section class="elanora-vendor-overview">
+
+                <div class="elanora-vendor-overview-content">
+
+                    <span>
+                        VENDOR MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Your event team,
+                        <strong>carefully coordinated.</strong>
+                    </h2>
+
+                    <p>
+                        Our planning team has assigned trusted vendors
+                        for every important part of your celebration.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-vendor-overview-stats">
+
+                    <div>
+                        <strong>06</strong>
+                        <span>VENDORS ASSIGNED</span>
+                    </div>
+
+                    <div>
+                        <strong>04</strong>
+                        <span>CONFIRMED</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>IN COORDINATION</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="elanora-assigned-vendors">
+
+                <div class="elanora-vendor-section-heading">
+
+                    <div>
+
+                        <span>
+                            ASSIGNED TO YOUR EVENT
+                        </span>
+
+                        <h2>
+                            Your event vendors
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        These professionals are currently working
+                        with our planning team for your celebration.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-vendor-grid">
+
+
+                    <!-- DECOR -->
+
+                    <article class="elanora-vendor-card">
+
+                        <div class="elanora-vendor-card-top">
+
+                            <img src="images/vendor-decor.jpg" alt="Decoration vendor">
+
+                            <span class="elanora-vendor-status confirmed">
+                                Confirmed
+                            </span>
+
+                        </div>
+
+                        <span>DECORATION</span>
+
+                        <h3>
+                            Bloom & Beyond
+                        </h3>
+
+                        <p>
+                            Complete venue styling, floral arrangements
+                            and stage decoration.
+                        </p>
+
+                        <a href="#">
+                            View Vendor
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- CATERING -->
+
+                    <article class="elanora-vendor-card">
+
+                        <div class="elanora-vendor-card-top">
+
+                            <img src="images/vendor-catering.jpg" alt="Catering vendor">
+
+                            <span class="elanora-vendor-status confirmed">
+                                Confirmed
+                            </span>
+
+                        </div>
+
+                        <span>CATERING</span>
+
+                        <h3>
+                            Harvest Table
+                        </h3>
+
+                        <p>
+                            Custom menu planning, buffet setup and
+                            guest dining service.
+                        </p>
+
+                        <a href="#">
+                            View Vendor
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- PHOTOGRAPHY -->
+
+                    <article class="elanora-vendor-card">
+
+                        <div class="elanora-vendor-card-top">
+
+                            <img src="images/vendor-photography.jpg" alt="Photography vendor">
+
+                            <span class="elanora-vendor-status confirmed">
+                                Confirmed
+                            </span>
+
+                        </div>
+
+                        <span>PHOTOGRAPHY</span>
+
+                        <h3>
+                            Frame & Light Studio
+                        </h3>
+
+                        <p>
+                            Event photography, candid moments and
+                            celebration highlights.
+                        </p>
+
+                        <a href="#">
+                            View Vendor
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- MUSIC -->
+
+                    <article class="elanora-vendor-card">
+
+                        <div class="elanora-vendor-card-top">
+
+                            <img src="images/vendor-music.jpg" alt="Music vendor">
+
+                            <span class="elanora-vendor-status pending">
+                                In Coordination
+                            </span>
+
+                        </div>
+
+                        <span>MUSIC & ENTERTAINMENT</span>
+
+                        <h3>
+                            Rhythm House
+                        </h3>
+
+                        <p>
+                            DJ setup, sound system and curated
+                            celebration playlist.
+                        </p>
+
+                        <a href="#">
+                            View Vendor
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- CAKE -->
+
+                    <article class="elanora-vendor-card">
+
+                        <div class="elanora-vendor-card-top">
+
+                            <img src="images/vendor-cake.jpg" alt="Cake vendor">
+
+                            <span class="elanora-vendor-status confirmed">
+                                Confirmed
+                            </span>
+
+                        </div>
+
+                        <span>CAKE & DESSERTS</span>
+
+                        <h3>
+                            Sweet Atelier
+                        </h3>
+
+                        <p>
+                            Custom birthday cake and coordinated
+                            dessert table setup.
+                        </p>
+
+                        <a href="#">
+                            View Vendor
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- LIGHTING -->
+
+                    <article class="elanora-vendor-card">
+
+                        <div class="elanora-vendor-card-top">
+
+                            <img src="images/vendor-lighting.jpg" alt="Lighting vendor">
+
+                            <span class="elanora-vendor-status pending">
+                                In Coordination
+                            </span>
+
+                        </div>
+
+                        <span>LIGHTING</span>
+
+                        <h3>
+                            Luma Events
+                        </h3>
+
+                        <p>
+                            Ambient lighting, entrance illumination
+                            and decorative lighting setup.
+                        </p>
+
+                        <a href="#">
+                            View Vendor
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+            <section class="elanora-vendor-service">
+
+                <div class="elanora-vendor-service-image">
+
+                    <img src="images/vendor-service-preview.jpg" alt="Event vendor service">
+
+                </div>
+
+
+                <div class="elanora-vendor-service-content">
+
+                    <span>
+                        SELECTED SERVICE
+                    </span>
+
+                    <h2>
+                        Bloom & Beyond
+                    </h2>
+
+                    <p>
+                        Your decoration partner is responsible for bringing
+                        the Elegant Garden theme to life across the venue.
+                    </p>
+
+
+                    <div class="elanora-service-details">
+
+                        <div>
+                            <span>SERVICE</span>
+                            <strong>Full Venue Decoration</strong>
+                        </div>
+
+                        <div>
+                            <span>SETUP DATE</span>
+                            <strong>18 October 2026</strong>
+                        </div>
+
+                        <div>
+                            <span>SETUP TIME</span>
+                            <strong>02:00 PM</strong>
+                        </div>
+
+                        <div>
+                            <span>STATUS</span>
+                            <strong>Confirmed</strong>
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" class="elanora-vendor-service-link">
+
+                        View Service Details
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="elanora-vendor-coordination">
+
+                <div class="elanora-vendor-coordination-main">
+
+                    <span>
+                        COORDINATION STATUS
+                    </span>
+
+                    <h2>
+                        Everything is being coordinated
+                        behind the scenes.
+                    </h2>
+
+                    <p>
+                        You don't need to contact every vendor individually.
+                        Your Élanora event coordinator is managing schedules,
+                        requirements and communication with the entire vendor team.
+                    </p>
+
+
+                    <div class="elanora-coordination-status">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>
+                            4 vendors confirmed · 2 vendors in coordination
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="elanora-vendor-coordinator-card">
+
+                    <img src="images/event-coordinator.jpg" alt="Event Coordinator">
+
+                    <div>
+
+                        <span>
+                            YOUR EVENT COORDINATOR
+                        </span>
+
+                        <h3>
+                            Sophia Williams
+                        </h3>
+
+                        <p>
+                            Senior Event Planner
+                        </p>
+
+                        <a href="#">
+                            Message Coordinator
+                            <i class="fa-regular fa-comments"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         LOGOUT CONFIRMATION
+         ===================================================== -->
+
+    <div class="elanora-logout-modal" id="logoutModal">
+
+        <div class="elanora-logout-modal-overlay"></div>
+
+
+        <div class="elanora-logout-modal-card" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+
+            <div class="elanora-logout-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <h2 id="logoutTitle">
+                Logout?
+            </h2>
+
+
+            <p>
+                Are you sure you want to logout from your
+                client dashboard?
+            </p>
+
+
+            <div class="elanora-logout-actions">
+
+                <button type="button" class="elanora-logout-no" id="logoutNo">
+                    No
+                </button>
+
+
+                <button type="button" class="elanora-logout-yes" id="logoutYes">
+                    Yes, Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Élanora Events - Elegant birthday, anniversary and corporate event planning services.">
+    <meta name="keywords"
+        content="event planner, birthday planner, anniversary events, corporate events, event decoration">
+    <meta name="author" content="Élanora Events">
+
+    <!-- Page Title -->
+    <title>Élanora Events</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="elanora-dashboard-body">
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="elanora-dashboard-sidebar" id="dashboardSidebar">
+
+
+        <!-- SIDEBAR TOP -->
+
+        <div class="elanora-sidebar-top">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="elanora-dashboard-logo">
+
+                <img src="images/logo-light.png" alt="Élanora Events">
+
+            </a>
+
+
+            <!-- MOBILE CLOSE -->
+
+            <button type="button" class="elanora-sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SIDEBAR MENU
+             ================================================= -->
+
+        <nav class="elanora-dashboard-nav">
+
+
+            <!-- OVERVIEW -->
+
+            <a href="dashboard.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- MY EVENT -->
+
+            <a href="d2.html" class="elanora-dashboard-link">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span>
+                    My Event
+                </span>
+
+            </a>
+
+
+            <!-- DECORATION -->
+
+            <a href="d3.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <span>
+                    Decoration Theme
+                </span>
+
+            </a>
+
+
+            <!-- VENDORS -->
+
+            <a href="d4.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-users-gear"></i>
+
+                <span>
+                    Vendor Assignments
+                </span>
+
+            </a>
+
+
+            <!-- TIMELINE -->
+
+            <a href="d5.html" class="elanora-dashboard-link active">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>
+                    Event Timeline
+                </span>
+
+            </a>
+
+
+            <!-- PAYMENTS -->
+
+            <a href="d6.html" class="elanora-dashboard-link">
+
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                <span>
+                    Payments & Invoices
+                </span>
+
+            </a>
+
+
+            <!-- MESSAGES -->
+
+            <a href="d7.html" class="elanora-dashboard-link">
+
+                <i class="fa-regular fa-comments"></i>
+
+                <span>
+                    Messages
+                </span>
+
+            </a>
+
+
+        </nav>
+
+        <div class="elanora-mobile-sidebar-controls">
+
+            <!-- NOTIFICATION + SETTINGS ROW -->
+
+            <div class="elanora-mobile-sidebar-icon-row">
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="elanora-mobile-sidebar-control" aria-label="Notifications">
+
+                    <span class="elanora-mobile-control-icon">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="elanora-mobile-notification-count">
+                            3
+                        </span>
+
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="elanora-mobile-sidebar-control" aria-label="Settings">
+
+                    <span class="elanora-mobile-control-icon">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <button type="button" class="elanora-mobile-sidebar-profile" aria-label="Client profile">
+
+                <img src="images/client-profile.jpg" alt="Olivia Carter">
+
+                <span>
+
+                    <strong>
+                        Olivia Carter
+                    </strong>
+
+                    <small>
+                        Client Profile
+                    </small>
+
+                </span>
+
+            </button>
+
+        </div>
+
+        <!-- =================================================
+             SIDEBAR BOTTOM
+             ================================================= -->
+
+        <div class="elanora-sidebar-bottom">
+
+
+            <!-- LOGOUT -->
+
+            <button type="button" class="elanora-dashboard-logout" id="dashboardLogout">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MOBILE SIDEBAR OVERLAY
+         ===================================================== -->
+
+    <div class="elanora-sidebar-overlay" id="sidebarOverlay"></div>
+
+
+
+    <!-- =====================================================
+         DASHBOARD MAIN
+         ===================================================== -->
+
+    <div class="elanora-dashboard-main">
+
+
+        <!-- =================================================
+             FIXED HEADER
+             ================================================= -->
+
+        <header class="elanora-dashboard-header">
+
+
+            <!-- LEFT -->
+
+            <div class="elanora-dashboard-header-left">
+
+
+                <!-- MOBILE MENU -->
+
+                <button type="button" class="elanora-dashboard-menu-toggle" id="sidebarOpen" aria-label="Open sidebar">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div class="elanora-dashboard-page-title">
+
+                    <span>
+                        CLIENT DASHBOARD
+                    </span>
+
+                    <h1>
+                        Timeline
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT -->
+
+            <div class="elanora-dashboard-header-right">
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="elanora-dashboard-header-btn elanora-notification-btn"
+                    aria-label="3 notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="elanora-notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="elanora-dashboard-header-btn" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+
+                <!-- DARK MODE -->
+
+                <button type="button" class="elanora-dashboard-header-btn" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+
+                <button type="button" class="elanora-dashboard-header-btn" id="dashboardRtlToggle"
+                    aria-label="Toggle RTL mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- CLIENT PROFILE -->
+
+                <button type="button" class="elanora-dashboard-profile" aria-label="Client profile">
+
+                    <img src="images/client-profile.jpg" alt="Olivia Carter">
+
+                    <span>
+                        Olivia Carter
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================================================
+     EVENT TIMELINE PAGE
+     ========================================================= -->
+
+        <main class="elanora-dashboard-content">
+
+
+            <!-- =====================================================
+         SECTION 01 — EVENT JOURNEY OVERVIEW
+         ===================================================== -->
+
+            <section class="elanora-timeline-overview">
+
+                <div class="elanora-timeline-overview-main">
+
+                    <span class="elanora-timeline-eyebrow">
+                        YOUR EVENT JOURNEY
+                    </span>
+
+                    <h2>
+                        Every milestone,
+                        <strong>beautifully planned.</strong>
+                    </h2>
+
+                    <p>
+                        Follow your celebration from the first booking
+                        through final execution. Your planning team keeps
+                        every important milestone on track.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-timeline-progress-box">
+
+                    <div class="elanora-timeline-progress-top">
+
+                        <span>
+                            PLANNING PROGRESS
+                        </span>
+
+                        <strong>
+                            72%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="elanora-timeline-progress-track">
+
+                        <div class="elanora-timeline-progress-fill" style="width: 72%;"></div>
+
+                    </div>
+
+
+                    <div class="elanora-timeline-progress-bottom">
+
+                        <span>
+                            Current Stage
+                        </span>
+
+                        <strong>
+                            Vendor Coordination
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 02 — PLANNING TIMELINE
+         ===================================================== -->
+
+            <section class="elanora-planning-timeline">
+
+
+                <div class="elanora-timeline-section-heading">
+
+                    <div>
+
+                        <span>
+                            PLANNING MILESTONES
+                        </span>
+
+                        <h2>
+                            Your planning timeline
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Track each important stage as your event moves
+                        closer to the celebration day.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-main-timeline">
+
+
+                    <!-- TIMELINE ITEM 01 -->
+
+                    <article class="elanora-main-timeline-item completed">
+
+                        <div class="elanora-main-timeline-marker">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-date">
+
+                            <strong>
+                                15
+                            </strong>
+
+                            <span>
+                                AUG 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-content">
+
+                            <span>
+                                COMPLETED
+                            </span>
+
+                            <h3>
+                                Event Booking Confirmed
+                            </h3>
+
+                            <p>
+                                Your celebration booking was confirmed
+                                and the planning process officially began.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- TIMELINE ITEM 02 -->
+
+                    <article class="elanora-main-timeline-item completed">
+
+                        <div class="elanora-main-timeline-marker">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-date">
+
+                            <strong>
+                                20
+                            </strong>
+
+                            <span>
+                                AUG 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-content">
+
+                            <span>
+                                COMPLETED
+                            </span>
+
+                            <h3>
+                                Decoration Theme Selected
+                            </h3>
+
+                            <p>
+                                Elegant Garden was selected as the preferred
+                                decoration concept for your celebration.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- TIMELINE ITEM 03 -->
+
+                    <article class="elanora-main-timeline-item active">
+
+                        <div class="elanora-main-timeline-marker">
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-date">
+
+                            <strong>
+                                28
+                            </strong>
+
+                            <span>
+                                AUG 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-content">
+
+                            <span>
+                                CURRENT STAGE
+                            </span>
+
+                            <h3>
+                                Vendor Coordination
+                            </h3>
+
+                            <p>
+                                Our team is confirming vendor schedules,
+                                services and event-day requirements.
+                            </p>
+
+                            <a href="#">
+                                View Vendor Assignments
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- TIMELINE ITEM 04 -->
+
+                    <article class="elanora-main-timeline-item">
+
+                        <div class="elanora-main-timeline-marker">
+
+                            <i class="fa-regular fa-circle"></i>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-date">
+
+                            <strong>
+                                05
+                            </strong>
+
+                            <span>
+                                SEP 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-content">
+
+                            <span>
+                                UPCOMING
+                            </span>
+
+                            <h3>
+                                Final Decoration Review
+                            </h3>
+
+                            <p>
+                                Review the final venue styling, setup plan
+                                and decoration placement.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- TIMELINE ITEM 05 -->
+
+                    <article class="elanora-main-timeline-item">
+
+                        <div class="elanora-main-timeline-marker">
+
+                            <i class="fa-regular fa-circle"></i>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-date">
+
+                            <strong>
+                                05
+                            </strong>
+
+                            <span>
+                                OCT 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-content">
+
+                            <span>
+                                UPCOMING
+                            </span>
+
+                            <h3>
+                                Final Event Review
+                            </h3>
+
+                            <p>
+                                Complete the final planning review before
+                                everything is handed over to the execution team.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- TIMELINE ITEM 06 -->
+
+                    <article class="elanora-main-timeline-item final">
+
+                        <div class="elanora-main-timeline-marker">
+
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-date">
+
+                            <strong>
+                                18
+                            </strong>
+
+                            <span>
+                                OCT 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="elanora-main-timeline-content">
+
+                            <span>
+                                EVENT DAY
+                            </span>
+
+                            <h3>
+                                Olivia's Birthday Celebration
+                            </h3>
+
+                            <p>
+                                Your planning journey comes together.
+                                Our team takes care of the execution while
+                                you enjoy your celebration.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 03 — CLIENT DEADLINES
+         ===================================================== -->
+
+            <section class="elanora-timeline-deadlines">
+
+
+                <div class="elanora-timeline-section-heading">
+
+                    <div>
+
+                        <span>
+                            CLIENT ACTIONS
+                        </span>
+
+                        <h2>
+                            Approvals & deadlines
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        A few important actions from you help keep
+                        the event planning on schedule.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-deadline-grid">
+
+
+                    <!-- DEADLINE 01 -->
+
+                    <article class="elanora-deadline-card completed">
+
+                        <div class="elanora-deadline-card-top">
+
+                            <div class="elanora-deadline-icon">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </div>
+
+                            <span>
+                                COMPLETED
+                            </span>
+
+                        </div>
+
+                        <span class="elanora-deadline-type">
+                            THEME
+                        </span>
+
+                        <h3>
+                            Decoration Theme Selection
+                        </h3>
+
+                        <p>
+                            Select your preferred decoration concept.
+                        </p>
+
+                        <strong>
+                            Completed · 20 Aug
+                        </strong>
+
+                    </article>
+
+
+
+                    <!-- DEADLINE 02 -->
+
+                    <article class="elanora-deadline-card active">
+
+                        <div class="elanora-deadline-card-top">
+
+                            <div class="elanora-deadline-icon">
+
+                                <i class="fa-solid fa-clock"></i>
+
+                            </div>
+
+                            <span>
+                                ACTION NEEDED
+                            </span>
+
+                        </div>
+
+                        <span class="elanora-deadline-type">
+                            TIMELINE
+                        </span>
+
+                        <h3>
+                            Approve Event Timeline
+                        </h3>
+
+                        <p>
+                            Review the proposed event-day schedule.
+                        </p>
+
+                        <strong>
+                            Due · 02 Sep
+                        </strong>
+
+                        <a href="#">
+                            Review Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- DEADLINE 03 -->
+
+                    <article class="elanora-deadline-card">
+
+                        <div class="elanora-deadline-card-top">
+
+                            <div class="elanora-deadline-icon">
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                            </div>
+
+                            <span>
+                                UPCOMING
+                            </span>
+
+                        </div>
+
+                        <span class="elanora-deadline-type">
+                            GUESTS
+                        </span>
+
+                        <h3>
+                            Confirm Final Guest Count
+                        </h3>
+
+                        <p>
+                            Submit your final expected guest count.
+                        </p>
+
+                        <strong>
+                            Due · 12 Sep
+                        </strong>
+
+                    </article>
+
+
+
+                    <!-- DEADLINE 04 -->
+
+                    <article class="elanora-deadline-card">
+
+                        <div class="elanora-deadline-card-top">
+
+                            <div class="elanora-deadline-icon">
+
+                                <i class="fa-solid fa-clipboard-check"></i>
+
+                            </div>
+
+                            <span>
+                                UPCOMING
+                            </span>
+
+                        </div>
+
+                        <span class="elanora-deadline-type">
+                            FINAL REVIEW
+                        </span>
+
+                        <h3>
+                            Complete Event Review
+                        </h3>
+
+                        <p>
+                            Review the event plan before execution.
+                        </p>
+
+                        <strong>
+                            Due · 05 Oct
+                        </strong>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+         SECTION 04 — EVENT DAY SCHEDULE
+         ===================================================== -->
+
+            <section class="elanora-event-day-schedule">
+
+
+                <div class="elanora-event-day-intro">
+
+                    <span>
+                        18 OCTOBER 2026
+                    </span>
+
+                    <h2>
+                        Your event day,
+                        <strong>at a glance.</strong>
+                    </h2>
+
+                    <p>
+                        Once the big day arrives, our team handles the
+                        coordination so you can focus on celebrating.
+                    </p>
+
+                </div>
+
+
+                <div class="elanora-event-day-list">
+
+
+                    <!-- 02 PM -->
+
+                    <div class="elanora-event-day-item">
+
+                        <div class="elanora-event-day-time">
+                            02:00 PM
+                        </div>
+
+                        <div class="elanora-event-day-dot"></div>
+
+                        <div class="elanora-event-day-info">
+
+                            <span>
+                                SETUP
+                            </span>
+
+                            <h3>
+                                Decoration Setup
+                            </h3>
+
+                            <p>
+                                Venue styling, stage decoration and
+                                tablescape preparation begins.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 04 PM -->
+
+                    <div class="elanora-event-day-item">
+
+                        <div class="elanora-event-day-time">
+                            04:00 PM
+                        </div>
+
+                        <div class="elanora-event-day-dot"></div>
+
+                        <div class="elanora-event-day-info">
+
+                            <span>
+                                FINAL CHECK
+                            </span>
+
+                            <h3>
+                                Vendor & Venue Walkthrough
+                            </h3>
+
+                            <p>
+                                Event coordinator completes the final
+                                venue and vendor readiness check.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 05:30 PM -->
+
+                    <div class="elanora-event-day-item">
+
+                        <div class="elanora-event-day-time">
+                            05:30 PM
+                        </div>
+
+                        <div class="elanora-event-day-dot"></div>
+
+                        <div class="elanora-event-day-info">
+
+                            <span>
+                                ARRIVAL
+                            </span>
+
+                            <h3>
+                                Guest Arrival
+                            </h3>
+
+                            <p>
+                                Guests arrive while the welcome and
+                                entrance experience is ready.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 06 PM -->
+
+                    <div class="elanora-event-day-item">
+
+                        <div class="elanora-event-day-time">
+                            06:00 PM
+                        </div>
+
+                        <div class="elanora-event-day-dot"></div>
+
+                        <div class="elanora-event-day-info">
+
+                            <span>
+                                CELEBRATION
+                            </span>
+
+                            <h3>
+                                Birthday Celebration Begins
+                            </h3>
+
+                            <p>
+                                The main celebration officially begins.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 09:30 PM -->
+
+                    <div class="elanora-event-day-item last">
+
+                        <div class="elanora-event-day-time">
+                            09:30 PM
+                        </div>
+
+                        <div class="elanora-event-day-dot"></div>
+
+                        <div class="elanora-event-day-info">
+
+                            <span>
+                                CLOSING
+                            </span>
+
+                            <h3>
+                                Event Ends
+                            </h3>
+
+                            <p>
+                                Our team completes the event wrap-up
+                                and venue coordination.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         LOGOUT CONFIRMATION
+         ===================================================== -->
+
+    <div class="elanora-logout-modal" id="logoutModal">
+
+        <div class="elanora-logout-modal-overlay"></div>
+
+
+        <div class="elanora-logout-modal-card" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+
+            <div class="elanora-logout-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <h2 id="logoutTitle">
+                Logout?
+            </h2>
+
+
+            <p>
+                Are you sure you want to logout from your
+                client dashboard?
+            </p>
+
+
+            <div class="elanora-logout-actions">
+
+                <button type="button" class="elanora-logout-no" id="logoutNo">
+                    No
+                </button>
+
+
+                <button type="button" class="elanora-logout-yes" id="logoutYes">
+                    Yes, Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
