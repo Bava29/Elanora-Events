@@ -29079,3 +29079,186 @@ html[dir="rtl"] .home-2-page .elanora-why-card p {
         font-size: 21px !important;
     }
 }
+
+/* =========================================================
+   HOME 2 — HERO TOP SPACING
+   ========================================================= */
+
+body.home-2-page .elanora-home2-hero {
+    margin-top: 30px !important;
+}
+
+/* =========================================================
+   FOOTER BOTTOM — ALWAYS VISIBLE
+   COPYRIGHT + PRIVACY + TERMS
+   ========================================================= */
+
+.elanora-footer .elanora-footer-bottom,
+html.elanora-reveal-ready .elanora-footer .elanora-footer-bottom,
+.elanora-footer .elanora-footer-bottom[data-reveal] {
+    display: flex !important;
+    position: relative !important;
+
+    width: 100% !important;
+    min-height: 45px !important;
+
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    padding-top: 25px !important;
+    padding-bottom: 5px !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+
+    z-index: 5 !important;
+}
+
+
+/* Copyright */
+.elanora-footer .elanora-footer-bottom p,
+html.elanora-reveal-ready .elanora-footer .elanora-footer-bottom p {
+    display: block !important;
+
+    margin: 0 !important;
+
+    color: rgba(255, 255, 255, 0.70) !important;
+
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* Bottom Links */
+.elanora-footer .elanora-footer-bottom-links,
+html.elanora-reveal-ready .elanora-footer .elanora-footer-bottom-links {
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    gap: 28px !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+
+/* Privacy + Terms */
+.elanora-footer .elanora-footer-bottom-links a,
+html.elanora-reveal-ready .elanora-footer .elanora-footer-bottom-links a {
+    display: inline-block !important;
+
+    color: rgba(255, 255, 255, 0.70) !important;
+
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: none !important;
+}
+
+
+.elanora-footer .elanora-footer-bottom-links a:hover {
+    color: var(--secondary-color) !important;
+}
+
+
+/* =========================================================
+   MOBILE FOOTER BOTTOM
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .elanora-footer .elanora-footer-bottom {
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 14px !important;
+
+        text-align: center !important;
+
+        padding-top: 22px !important;
+        padding-bottom: 8px !important;
+    }
+
+
+    .elanora-footer .elanora-footer-bottom p {
+        width: 100% !important;
+
+        text-align: center !important;
+
+        font-size: 14px !important;
+    }
+
+
+    .elanora-footer .elanora-footer-bottom-links {
+        width: 100% !important;
+
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 12px 20px !important;
+    }
+
+
+    .elanora-footer .elanora-footer-bottom-links a {
+        font-size: 14px !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .elanora-footer .elanora-footer-bottom {
+        gap: 12px !important;
+    }
+
+
+    .elanora-footer .elanora-footer-bottom-links {
+        flex-direction: column !important;
+
+        gap: 8px !important;
+    }
+
+}
+
+/* =========================================================
+   ABOUT BELIEF CARDS — REDUCE INTERNAL SPACE
+   ========================================================= */
+
+.elanora-about-belief-card {
+    padding: 28px !important;
+    min-height: 0 !important;
+}
+
+.elanora-about-belief-top {
+    margin-bottom: 45px !important;
+}
+
+.elanora-about-belief-card h3 {
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+}
+
+.elanora-about-belief-card p {
+    margin: 0 !important;
+    line-height: 1.7 !important;
+}

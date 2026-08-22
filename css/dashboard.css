@@ -24112,3 +24112,533 @@ html[dir="rtl"] .elanora-event-day-info {
 
     direction: rtl !important;
 }
+
+/* =========================================================
+   DASHBOARD - UPCOMING PLAN SNAPSHOT
+   ADDITIVE ONLY
+   ========================================================= */
+
+.elanora-upcoming-plan .elanora-upcoming-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot {
+    position: relative;
+    margin-top: 28px;
+    padding: 22px 22px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    overflow: hidden;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot::before {
+    content: none;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
+    width: calc(100% - 44px);
+    height: 1px;
+    background: linear-gradient(90deg, rgba(232, 201, 168, 0.35), rgba(255, 255, 255, 0));
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    color: var(--secondary-color);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-kicker i {
+    font-size: 12px;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-progress {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 16px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-ring {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 88px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-ring::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(var(--secondary-color) 0 72%, rgba(255, 255, 255, 0.12) 72% 100%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-ring::after {
+    content: "";
+    position: absolute;
+    inset: 11px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-ring span {
+    position: relative;
+    z-index: 1;
+    font-family: var(--heading-font);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-copy strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--white);
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-copy p {
+    max-width: 260px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-stat {
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-stat span {
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.elanora-upcoming-plan .elanora-upcoming-snapshot-stat strong {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* =========================================================
+   D5 - EVENT DAY SNAPSHOT
+   ADDITIVE ONLY
+   ========================================================= */
+
+.elanora-event-day-schedule .elanora-event-day-intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot {
+    position: relative;
+    margin-top: 28px;
+    padding: 22px 22px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    overflow: hidden;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot::before {
+    content: "";
+    position: absolute;
+    inset: 16px 16px auto auto;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 1px solid rgba(232, 201, 168, 0.18);
+    background: radial-gradient(circle at 35% 35%, rgba(232, 201, 168, 0.28), rgba(232, 201, 168, 0.02) 70%), linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
+    width: calc(100% - 44px);
+    height: 1px;
+    background: linear-gradient(90deg, rgba(232, 201, 168, 0.35), rgba(255, 255, 255, 0));
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    color: var(--secondary-color);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-kicker i {
+    font-size: 12px;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-date {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    gap: 1px;
+    width: 112px;
+    min-height: 112px;
+    margin-bottom: 18px;
+    padding: 12px;
+    border: 1px solid rgba(232, 201, 168, 0.45);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-date strong {
+    color: var(--white);
+    font-family: var(--heading-font);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 0.95;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-date span {
+    color: var(--secondary-color);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-date small {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-venue {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-venue i {
+    color: var(--secondary-color);
+    font-size: 13px;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-stat {
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-stat span {
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.elanora-event-day-schedule .elanora-event-day-snapshot-stat strong {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+}
+
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot-copy p,
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot-stat span,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot-date small,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot-stat span {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+html[dir="rtl"] .elanora-upcoming-plan .elanora-upcoming-snapshot::after,
+html[dir="rtl"] .elanora-event-day-schedule .elanora-event-day-snapshot::after {
+    left: auto;
+    right: 22px;
+    background: linear-gradient(270deg, rgba(232, 201, 168, 0.35), rgba(255, 255, 255, 0));
+}
+
+html[dir="rtl"] .elanora-event-day-schedule .elanora-event-day-snapshot-date {
+    align-items: center;
+    border-right: 1px solid rgba(232, 201, 168, 0.45);
+    border-left: 1px solid rgba(232, 201, 168, 0.45);
+}
+
+@media (max-width: 1024px) {
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot,
+    .elanora-event-day-schedule .elanora-event-day-snapshot {
+        padding: 20px 20px 18px;
+        border-radius: 16px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-progress {
+        grid-template-columns: 80px minmax(0, 1fr);
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-ring {
+        width: 80px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-ring span {
+        font-size: 28px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-copy strong {
+        font-size: 22px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-grid,
+    .elanora-event-day-schedule .elanora-event-day-snapshot-grid {
+        gap: 10px;
+    }
+
+    .elanora-event-day-schedule .elanora-event-day-snapshot-date strong {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot,
+    .elanora-event-day-schedule .elanora-event-day-snapshot {
+        margin-top: 22px;
+        padding: 18px 18px 16px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot::before,
+    .elanora-event-day-schedule .elanora-event-day-snapshot::before {
+        inset: 14px 14px auto auto;
+        width: 62px;
+        height: 62px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-progress,
+    .elanora-event-day-schedule .elanora-event-day-snapshot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-ring {
+        width: 76px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-copy strong,
+    .elanora-event-day-schedule .elanora-event-day-snapshot-date strong {
+        font-size: 20px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-copy p {
+        max-width: none;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-stat,
+    .elanora-event-day-schedule .elanora-event-day-snapshot-stat {
+        padding-top: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot,
+    .elanora-event-day-schedule .elanora-event-day-snapshot {
+        padding: 16px 16px 15px;
+        border-radius: 14px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-kicker,
+    .elanora-event-day-schedule .elanora-event-day-snapshot-kicker {
+        margin-bottom: 14px;
+        font-size: 9px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-progress {
+        gap: 14px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-ring {
+        width: 70px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-ring span {
+        font-size: 24px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-copy strong {
+        font-size: 19px;
+    }
+
+    .elanora-upcoming-plan .elanora-upcoming-snapshot-copy p,
+    .elanora-event-day-schedule .elanora-event-day-snapshot-venue {
+        font-size: 13px;
+    }
+
+    .elanora-event-day-schedule .elanora-event-day-snapshot-date {
+        margin-bottom: 16px;
+        width: 102px;
+        min-height: 102px;
+        padding: 10px;
+    }
+
+    .elanora-event-day-schedule .elanora-event-day-snapshot-date strong {
+        font-size: 30px;
+    }
+}
+
+/* =========================================================
+   ULTRA STRONG DARK MODE TEXT FIX
+   PLANNING SNAPSHOT + EVENT DAY SNAPSHOT
+   DARK MODE ONLY — DO NOT AFFECT LIGHT MODE
+   ========================================================= */
+
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot .elanora-upcoming-snapshot-kicker .elanora-upcoming-snapshot-kicker span,
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot .elanora-upcoming-snapshot-kicker .elanora-upcoming-snapshot-kicker i {
+    color: #E8C9A8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   PLANNING SNAPSHOT — ALL TEXT WHITE
+   --------------------------------------------------------- */
+
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot .elanora-upcoming-snapshot-ring .elanora-upcoming-snapshot-ring span,
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot .elanora-upcoming-snapshot-copy .elanora-upcoming-snapshot-copy strong,
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot .elanora-upcoming-snapshot-stat .elanora-upcoming-snapshot-stat span,
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot .elanora-upcoming-snapshot-stat strong {
+    color: #FFFFFF !important;
+}
+
+
+/* ---------------------------------------------------------
+   PLANNING SNAPSHOT — HEADING / ICON KEEP CREAM
+   --------------------------------------------------------- */
+
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot .elanora-upcoming-snapshot-kicker,
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot .elanora-upcoming-snapshot-kicker span,
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-plan .elanora-upcoming-snapshot .elanora-upcoming-snapshot-kicker i {
+    color: #E8C9A8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   EVENT DAY SNAPSHOT — ALL TEXT WHITE
+   --------------------------------------------------------- */
+
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot .elanora-event-day-snapshot-date .elanora-event-day-snapshot-date strong,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot .elanora-event-day-snapshot-venue,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot .elanora-event-day-snapshot-venue span,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot .elanora-event-day-snapshot-stat .elanora-event-day-snapshot-stat span,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot .elanora-event-day-snapshot-stat strong {
+    color: #FFFFFF !important;
+}
+
+
+/* ---------------------------------------------------------
+   EVENT DAY SNAPSHOT — KICKER / ICON / OCT CREAM
+   --------------------------------------------------------- */
+
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot .elanora-event-day-snapshot-kicker,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot .elanora-event-day-snapshot-kicker span,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot .elanora-event-day-snapshot-kicker i,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot .elanora-event-day-snapshot-date span,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-schedule .elanora-event-day-snapshot .elanora-event-day-snapshot-venue i {
+    color: #E8C9A8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   FINAL NUCLEAR OVERRIDE
+   ONLY THESE TWO SNAPSHOT CARDS
+   --------------------------------------------------------- */
+
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-snapshot * {
+    color: #FFFFFF !important;
+}
+
+body.elanora-dashboard-body.dark-mode .elanora-event-day-snapshot * {
+    color: #FFFFFF !important;
+}
+
+
+/* Restore only the intended cream elements */
+
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-snapshot .elanora-upcoming-snapshot-kicker,
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-snapshot .elanora-upcoming-snapshot-kicker span,
+body.elanora-dashboard-body.dark-mode .elanora-upcoming-snapshot .elanora-upcoming-snapshot-kicker i,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-snapshot .elanora-event-day-snapshot-kicker,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-snapshot .elanora-event-day-snapshot-kicker span,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-snapshot .elanora-event-day-snapshot-kicker i,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-snapshot .elanora-event-day-snapshot-date span,
+body.elanora-dashboard-body.dark-mode .elanora-event-day-snapshot .elanora-event-day-snapshot-venue i {
+    color: #E8C9A8 !important;
+}
