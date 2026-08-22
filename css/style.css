@@ -27,6 +27,7 @@
 
     /* Layout */
     --container-width: 1200px;
+    --container-gutter: 24px;
     --section-padding: 100px;
 
     /* Border Radius */
@@ -193,7 +194,7 @@ h6 {
     margin: 0;
     padding: 0;
     font-family: var(--heading-font);
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.2;
     color: var(--primary-color);
 }
@@ -231,6 +232,7 @@ h6 {
 
 p {
     margin: 0 0 15px;
+    font-weight: 400;
 }
 
 
@@ -272,8 +274,7 @@ select {
     width: 100%;
     max-width: var(--container-width);
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-inline: var(--container-gutter);
 }
 
 
@@ -494,8 +495,7 @@ select {
     }
 
     .container {
-        padding-left: 16px;
-        padding-right: 16px;
+        --container-gutter: 16px;
     }
 
     .btn {
@@ -8971,7 +8971,7 @@ body.dark-mode .elanora-why-number {
 
     font-family: var(--heading-font);
 
-    font-size: 32px;
+    font-size: 28px;
 
     font-weight: 400;
 }
@@ -27979,5 +27979,1103 @@ body.dark-mode .elanora-form-note span {
         flex-direction: row !important;
         flex-wrap: wrap !important;
         gap: 15px !important;
+    }
+}
+
+/* =========================================================
+   HOME 1 - DARK MODE
+   VISUAL MARK "É" TEXT
+   ========================================================= */
+
+body.dark-mode .elanora-visual-mark span {
+    color: #241B22 !important;
+}
+
+/* =========================================================
+   STANDARD BODY PARAGRAPHS
+   Home 1 reference: 16px desktop, 15px mobile
+   ========================================================= */
+
+.elanora-home2-hero-content p,
+.elanora-home2-experience-content p,
+.elanora-home2-method-heading p,
+.elanora-method-card-content p,
+.elanora-home2-method-statement p,
+.elanora-home2-final-cta-content p,
+.celebration-story-content p,
+.experience-packages-head p,
+.experience-package-description p,
+.client-stories-description p,
+.events-gallery-heading p,
+.event-gallery-feature .event-gallery-info p,
+.event-journey-heading p,
+.event-journey-main p,
+.why-elanora-intro>p,
+.why-card-content p,
+.elanora-faq-intro>p,
+.elanora-faq-answer p,
+.elanora-booking-content>p,
+.elanora-about-story-content p,
+.elanora-about-beliefs-heading p,
+.elanora-about-belief-card p,
+.elanora-about-approach-heading p,
+.elanora-about-approach-card p,
+.elanora-about-expertise-item p,
+.elanora-about-team-heading p,
+.elanora-about-milestone p,
+.elanora-about-final-cta-content p,
+.elanora-services-offer-heading p,
+.elanora-services-offer-card p,
+.elanora-services-wedding-item p,
+.elanora-services-events-heading p,
+.elanora-services-event-content>p,
+.elanora-services-packages-heading p,
+.elanora-services-final-cta-content p,
+.elanora-gallery-featured-heading p,
+.elanora-gallery-weddings-heading p,
+.elanora-gallery-details-heading p,
+.elanora-gallery-final-cta-content p,
+.contact-details-heading p,
+.contact-detail-content p,
+.elanora-form-intro>p,
+.elanora-auth-heading p {
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+
+    .elanora-home2-hero-content p,
+    .elanora-home2-experience-content p,
+    .elanora-home2-method-heading p,
+    .elanora-method-card-content p,
+    .elanora-home2-method-statement p,
+    .elanora-home2-final-cta-content p,
+    .celebration-story-content p,
+    .experience-packages-head p,
+    .experience-package-description p,
+    .client-stories-description p,
+    .events-gallery-heading p,
+    .event-gallery-feature .event-gallery-info p,
+    .event-journey-heading p,
+    .event-journey-main p,
+    .why-elanora-intro>p,
+    .why-card-content p,
+    .elanora-faq-intro>p,
+    .elanora-faq-answer p,
+    .elanora-booking-content>p,
+    .elanora-about-story-content p,
+    .elanora-about-beliefs-heading p,
+    .elanora-about-belief-card p,
+    .elanora-about-approach-heading p,
+    .elanora-about-approach-card p,
+    .elanora-about-expertise-item p,
+    .elanora-about-team-heading p,
+    .elanora-about-milestone p,
+    .elanora-about-final-cta-content p,
+    .elanora-services-offer-heading p,
+    .elanora-services-offer-card p,
+    .elanora-services-wedding-item p,
+    .elanora-services-events-heading p,
+    .elanora-services-event-content>p,
+    .elanora-services-packages-heading p,
+    .elanora-services-final-cta-content p,
+    .elanora-gallery-featured-heading p,
+    .elanora-gallery-weddings-heading p,
+    .elanora-gallery-details-heading p,
+    .elanora-gallery-final-cta-content p,
+    .contact-details-heading p,
+    .contact-detail-content p,
+    .elanora-form-intro>p,
+    .elanora-auth-heading p {
+        font-size: 15px;
+    }
+
+}
+
+/* =========================================================
+   HOME 2 TEXT SIZE BOOST
+   Applied only on home-2.html via body.home-2-page
+   ========================================================= */
+
+body.home-2-page .elanora-home2-hero-label {
+    font-size: 11px;
+}
+
+body.home-2-page .elanora-home2-hero-content h1 {
+    font-size: clamp(58px, 6vw, 94px);
+}
+
+body.home-2-page .elanora-home2-hero-content p {
+    font-size: 17px;
+}
+
+body.home-2-page .elanora-home2-hero-button {
+    font-size: 13px;
+}
+
+body.home-2-page .elanora-home2-hero-side span,
+body.home-2-page .elanora-home2-hero-side small,
+body.home-2-page .elanora-home2-hero-bottom span,
+body.home-2-page .elanora-home2-hero-scroll {
+    font-size: 10px;
+}
+
+body.home-2-page .elanora-home2-intro-eyebrow {
+    font-size: 11px;
+}
+
+body.home-2-page .elanora-home2-intro-content h2 {
+    font-size: clamp(52px, 5.3vw, 82px);
+}
+
+body.home-2-page .elanora-home2-intro-lead {
+    font-size: 28px;
+}
+
+body.home-2-page .elanora-home2-intro-description {
+    font-size: 16px;
+}
+
+body.home-2-page .elanora-home2-intro-details strong {
+    font-size: 20px;
+}
+
+body.home-2-page .elanora-home2-intro-details span {
+    font-size: 11px;
+}
+
+body.home-2-page .elanora-home2-intro-details small {
+    font-size: 12px;
+}
+
+body.home-2-page .elanora-home2-intro-link {
+    font-size: 13px;
+}
+
+body.home-2-page .elanora-home2-experiences-heading>div>span {
+    font-size: 11px;
+}
+
+body.home-2-page .elanora-home2-experiences-heading h2 {
+    font-size: clamp(52px, 5.3vw, 82px);
+}
+
+body.home-2-page .elanora-home2-experiences-heading>p {
+    font-size: 16px;
+}
+
+body.home-2-page .elanora-home2-experience-number {
+    font-size: 19px;
+}
+
+body.home-2-page .elanora-home2-experience-content span {
+    font-size: 10px;
+}
+
+body.home-2-page .elanora-home2-experience-content h3 {
+    font-size: 44px;
+}
+
+body.home-2-page .elanora-home2-experience-content p {
+    font-size: 15px;
+}
+
+body.home-2-page .elanora-home2-method-heading>span {
+    font-size: 11px;
+}
+
+body.home-2-page .elanora-home2-method-heading h2 {
+    font-size: clamp(54px, 5.5vw, 84px);
+}
+
+body.home-2-page .elanora-home2-method-heading p {
+    font-size: 16px;
+}
+
+body.home-2-page .elanora-method-number {
+    font-size: 19px;
+}
+
+body.home-2-page .elanora-method-small-title {
+    font-size: 10px;
+}
+
+body.home-2-page .elanora-method-card-content h3 {
+    font-size: 38px;
+}
+
+body.home-2-page .elanora-method-card-content p {
+    font-size: 15px;
+}
+
+body.home-2-page .elanora-home2-method-statement>span {
+    font-size: 10px;
+}
+
+body.home-2-page .elanora-home2-method-statement p {
+    font-size: 23px;
+}
+
+body.home-2-page .elanora-featured-simple-content>span {
+    font-size: 11px;
+}
+
+body.home-2-page .elanora-featured-simple-content h2 {
+    font-size: 66px;
+}
+
+body.home-2-page .elanora-featured-simple-content>p {
+    font-size: 16px;
+}
+
+body.home-2-page .elanora-featured-simple-info small {
+    font-size: 13px;
+}
+
+body.home-2-page .elanora-featured-simple-info strong {
+    font-size: 14px;
+}
+
+body.home-2-page .elanora-featured-simple-content>a {
+    font-size: 14px;
+}
+
+body.home-2-page .elanora-home2-testimonial-heading>span {
+    font-size: 13px;
+}
+
+body.home-2-page .elanora-home2-testimonial-heading h2 {
+    font-size: clamp(50px, 5.3vw, 70px);
+}
+
+body.home-2-page .elanora-home2-testimonial-quote blockquote {
+    font-size: clamp(28px, 3.2vw, 38px);
+}
+
+body.home-2-page .elanora-home2-client-details strong {
+    font-size: 18px;
+}
+
+body.home-2-page .elanora-home2-client-details span {
+    font-size: 15px;
+}
+
+body.home-2-page .elanora-home2-final-cta-label {
+    font-size: 13px;
+}
+
+body.home-2-page .elanora-home2-final-cta-content h2 {
+    font-size: clamp(54px, 6.2vw, 82px);
+}
+
+body.home-2-page .elanora-home2-final-cta-content p {
+    font-size: 17px;
+}
+
+body.home-2-page .elanora-home2-final-cta-button {
+    font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+
+    body.home-2-page .elanora-home2-hero-content h1 {
+        font-size: clamp(52px, 7vw, 82px);
+    }
+
+    body.home-2-page .elanora-home2-hero-content p {
+        font-size: 16px;
+    }
+
+    body.home-2-page .elanora-home2-intro-content h2,
+    body.home-2-page .elanora-home2-experiences-heading h2,
+    body.home-2-page .elanora-home2-method-heading h2 {
+        font-size: clamp(48px, 5.8vw, 72px);
+    }
+
+    body.home-2-page .elanora-home2-intro-lead {
+        font-size: 24px;
+    }
+
+    body.home-2-page .elanora-home2-experience-content h3 {
+        font-size: 36px;
+    }
+
+    body.home-2-page .elanora-home2-method-card-content h3 {
+        font-size: 34px;
+    }
+
+    body.home-2-page .elanora-featured-simple-content h2 {
+        font-size: 58px;
+    }
+
+    body.home-2-page .elanora-home2-testimonial-heading h2 {
+        font-size: clamp(44px, 5.8vw, 64px);
+    }
+
+    body.home-2-page .elanora-home2-testimonial-quote blockquote {
+        font-size: clamp(24px, 3.6vw, 34px);
+    }
+
+    body.home-2-page .elanora-home2-final-cta-content h2 {
+        font-size: clamp(50px, 6.8vw, 74px);
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    body.home-2-page .elanora-home2-hero-label {
+        font-size: 10px;
+    }
+
+    body.home-2-page .elanora-home2-hero-content h1 {
+        font-size: clamp(42px, 12vw, 60px);
+    }
+
+    body.home-2-page .elanora-home2-hero-content p {
+        font-size: 15px;
+    }
+
+    body.home-2-page .elanora-home2-hero-button,
+    body.home-2-page .elanora-home2-final-cta-button {
+        font-size: 12px;
+    }
+
+    body.home-2-page .elanora-home2-hero-side span,
+    body.home-2-page .elanora-home2-hero-side small,
+    body.home-2-page .elanora-home2-hero-bottom span,
+    body.home-2-page .elanora-home2-hero-scroll {
+        font-size: 9px;
+    }
+
+    body.home-2-page .elanora-home2-intro-eyebrow {
+        font-size: 10px;
+    }
+
+    body.home-2-page .elanora-home2-intro-content h2,
+    body.home-2-page .elanora-home2-experiences-heading h2,
+    body.home-2-page .elanora-home2-method-heading h2 {
+        font-size: clamp(40px, 10vw, 58px);
+    }
+
+    body.home-2-page .elanora-home2-intro-lead {
+        font-size: 22px;
+    }
+
+    body.home-2-page .elanora-home2-intro-description,
+    body.home-2-page .elanora-home2-experiences-heading>p,
+    body.home-2-page .elanora-home2-method-heading p,
+    body.home-2-page .elanora-home2-final-cta-content p,
+    body.home-2-page .elanora-home2-experience-content p,
+    body.home-2-page .elanora-method-card-content p,
+    body.home-2-page .elanora-featured-simple-content>p {
+        font-size: 15px;
+    }
+
+    body.home-2-page .elanora-home2-intro-details strong,
+    body.home-2-page .elanora-home2-experience-number,
+    body.home-2-page .elanora-method-number,
+    body.home-2-page .elanora-home2-client-details strong {
+        font-size: 17px;
+    }
+
+    body.home-2-page .elanora-home2-intro-details span,
+    body.home-2-page .elanora-home2-experience-content span,
+    body.home-2-page .elanora-method-small-title {
+        font-size: 9px;
+    }
+
+    body.home-2-page .elanora-home2-intro-details small,
+    body.home-2-page .elanora-featured-simple-content>span,
+    body.home-2-page .elanora-home2-testimonial-heading>span,
+    body.home-2-page .elanora-home2-final-cta-label {
+        font-size: 11px;
+    }
+
+    body.home-2-page .elanora-home2-intro-link,
+    body.home-2-page .elanora-featured-simple-content>a,
+    body.home-2-page .elanora-home2-final-cta-button {
+        font-size: 13px;
+    }
+
+    body.home-2-page .elanora-home2-experience-content h3 {
+        font-size: 32px;
+    }
+
+    body.home-2-page .elanora-method-card-content h3 {
+        font-size: 30px;
+    }
+
+    body.home-2-page .elanora-home2-method-statement p {
+        font-size: 19px;
+    }
+
+    body.home-2-page .elanora-featured-simple-content h2 {
+        font-size: 50px;
+    }
+
+    body.home-2-page .elanora-home2-testimonial-heading h2 {
+        font-size: clamp(40px, 10vw, 54px);
+    }
+
+    body.home-2-page .elanora-home2-testimonial-quote blockquote {
+        font-size: clamp(22px, 6vw, 30px);
+    }
+
+    body.home-2-page .elanora-home2-client-details span {
+        font-size: 13px;
+    }
+
+    body.home-2-page .elanora-home2-final-cta-content h2 {
+        font-size: clamp(44px, 11vw, 60px);
+    }
+
+}
+
+
+/* =========================================================
+   HOME 2 TESTIMONIAL — FULL HEIGHT IMAGE OVERRIDE
+   ========================================================= */
+
+.elanora-home2-testimonial-content {
+    align-items: stretch !important;
+}
+
+.elanora-home2-testimonial-image {
+    height: auto !important;
+    min-height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-self: stretch !important;
+    overflow: hidden !important;
+}
+
+.elanora-home2-testimonial-image img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    object-fit: cover !important;
+}
+
+/* =========================================================
+   HOME 2 — HERO TO INTRODUCTION SPACING
+   ========================================================= */
+
+.elanora-home2-hero {
+    margin-bottom: 100px !important;
+}
+
+.elanora-home2-introduction {
+    margin-top: 0 !important;
+}
+
+/* =========================================================
+   HOME 2 — HERO / NEXT SECTION GAP DARK MODE
+   ========================================================= */
+
+body.dark-mode.home-2-page {
+    background-color: #241B22 !important;
+}
+
+/* Gap between Hero and Introduction */
+body.dark-mode.home-2-page .elanora-home2-hero {
+    margin-bottom: 100px !important;
+}
+
+/* Introduction should use the same dark background */
+body.dark-mode.home-2-page .elanora-home2-introduction {
+    background-color: #241B22 !important;
+}
+
+/* =========================================================
+   HOME 2 — RESPONSIVE GAP
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    body.dark-mode.home-2-page .elanora-home2-hero {
+        margin-bottom: 45px !important;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    body.dark-mode.home-2-page .elanora-home2-hero {
+        margin-bottom: 30px !important;
+    }
+
+}
+
+/* =========================================================
+   CONTACT PAGE — DARK MODE HOVER HEADING FIX
+   ========================================================= */
+
+/* Normal heading */
+body.dark-mode .contact-detail-card .contact-detail-content h3 {
+    color: #F5EAE3 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hover heading — KEEP VISIBLE */
+body.dark-mode .contact-detail-card:hover .contact-detail-content h3 {
+    color: #F5EAE3 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+/* Keep all heading children visible */
+body.dark-mode .contact-detail-card .contact-detail-content h3 *,
+body.dark-mode .contact-detail-card:hover .contact-detail-content h3 * {
+    color: #F5EAE3 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Prevent hover overlay/pseudo-element from covering heading */
+body.dark-mode .contact-detail-card::before,
+body.dark-mode .contact-detail-card::after,
+body.dark-mode .contact-detail-card:hover::before,
+body.dark-mode .contact-detail-card:hover::after {
+    pointer-events: none !important;
+}
+
+/* Keep card content above any hover layer */
+body.dark-mode .contact-detail-card .contact-detail-content {
+    position: relative;
+    z-index: 5 !important;
+}
+
+body.dark-mode .contact-detail-card .contact-detail-content h3 {
+    position: relative;
+    z-index: 6 !important;
+}
+
+/* =========================================================
+   LOGIN + REGISTER
+   SCROLL WITH PAGE — DO NOT FIX CONTROLS
+   ========================================================= */
+
+.elanora-auth-controls {
+    position: absolute !important;
+
+    top: 25px !important;
+    right: 28px !important;
+
+    z-index: 100 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+
+/* Prevent any child control from becoming fixed */
+.elanora-auth-controls .elanora-auth-control {
+    position: static !important;
+}
+
+
+/* RTL position */
+html[dir="rtl"] .elanora-auth-controls {
+    right: auto !important;
+    left: 28px !important;
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .elanora-auth-controls {
+        top: 15px !important;
+        right: 15px !important;
+        gap: 7px !important;
+    }
+
+    html[dir="rtl"] .elanora-auth-controls {
+        right: auto !important;
+        left: 15px !important;
+    }
+
+}
+
+/* =========================================================
+   AUTH PAGES — RTL ONLY
+   LOGIN + REGISTER
+   ========================================================= */
+
+html[dir="rtl"] .elanora-auth-body {
+    direction: rtl !important;
+}
+
+
+/* ---------- TOP CONTROLS ---------- */
+
+html[dir="rtl"] .elanora-auth-controls {
+    right: auto !important;
+    left: 28px !important;
+
+    direction: ltr !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+}
+
+
+/* Keep icons themselves visually correct */
+html[dir="rtl"] .elanora-auth-control {
+    direction: ltr !important;
+    text-align: center !important;
+
+    flex: 0 0 auto !important;
+}
+
+
+/* ---------- AUTH CARD ---------- */
+
+html[dir="rtl"] .elanora-auth-card {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+
+/* ---------- HEADING ---------- */
+
+html[dir="rtl"] .elanora-auth-heading {
+    text-align: right !important;
+}
+
+
+/* ---------- FORM ---------- */
+
+html[dir="rtl"] .elanora-auth-form {
+    direction: rtl !important;
+}
+
+html[dir="rtl"] .elanora-auth-field {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .elanora-auth-field label {
+    text-align: right !important;
+}
+
+
+/* ---------- INPUTS ---------- */
+
+html[dir="rtl"] .elanora-auth-input-wrap {
+    direction: rtl !important;
+}
+
+html[dir="rtl"] .elanora-auth-input-wrap input {
+    direction: rtl !important;
+    text-align: right !important;
+
+    padding-left: 46px !important;
+    padding-right: 46px !important;
+}
+
+
+/* ---------- INPUT ICONS ---------- */
+
+html[dir="rtl"] .elanora-auth-input-wrap>i {
+    left: auto !important;
+    right: 18px !important;
+}
+
+
+/* Password eye icon */
+html[dir="rtl"] .elanora-password-toggle {
+    right: auto !important;
+    left: 14px !important;
+
+    direction: ltr !important;
+}
+
+
+/* ---------- REMEMBER / FORGOT ---------- */
+
+html[dir="rtl"] .elanora-auth-options {
+    direction: rtl !important;
+    flex-direction: row !important;
+}
+
+html[dir="rtl"] .elanora-remember {
+    direction: rtl !important;
+}
+
+
+/* ---------- SUBMIT BUTTON ---------- */
+
+html[dir="rtl"] .elanora-auth-submit {
+    direction: rtl !important;
+}
+
+
+/* Keep arrow on correct RTL side */
+html[dir="rtl"] .elanora-auth-submit i {
+    transform: rotate(180deg) !important;
+}
+
+
+/* ---------- DIVIDER ---------- */
+
+html[dir="rtl"] .elanora-auth-divider {
+    direction: rtl !important;
+}
+
+
+/* ---------- SOCIAL ICONS ---------- */
+
+html[dir="rtl"] .elanora-auth-social {
+    direction: rtl !important;
+    justify-content: center !important;
+}
+
+
+/* ---------- BOTTOM LOGIN / REGISTER LINK ---------- */
+
+html[dir="rtl"] .elanora-auth-switch {
+    direction: rtl !important;
+    text-align: center !important;
+}
+
+
+/* =========================================================
+   RTL — TABLET / MOBILE ONLY
+   Does NOT affect desktop LTR
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    html[dir="rtl"] .elanora-auth-controls {
+        right: auto !important;
+        left: 22px !important;
+    }
+
+}
+
+
+@media (max-width: 820px) {
+
+    html[dir="rtl"] .elanora-auth-controls {
+        right: auto !important;
+        left: 18px !important;
+
+        gap: 8px !important;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .elanora-auth-controls {
+        right: auto !important;
+        left: 16px !important;
+
+        gap: 7px !important;
+    }
+
+}
+
+/* =========================================================
+   ÉLANORA HOME 2 — STRONG RTL FIX
+   WHY CHOOSE ÉLANORA SECTION ONLY
+   RTL ONLY — LTR / DESKTOP UNTOUCHED
+   ========================================================= */
+
+html[dir="rtl"] .home-2-page .elanora-why-section {
+    direction: rtl !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+
+/* Container */
+html[dir="rtl"] .home-2-page .elanora-why-container {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    direction: rtl !important;
+}
+
+
+/* Heading */
+html[dir="rtl"] .home-2-page .elanora-why-heading {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+
+/* Heading text */
+html[dir="rtl"] .home-2-page .elanora-why-heading h2,
+html[dir="rtl"] .home-2-page .elanora-why-heading p,
+html[dir="rtl"] .home-2-page .elanora-why-heading span {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+
+/* =========================================================
+   CARD GRID
+   ========================================================= */
+
+html[dir="rtl"] .home-2-page .elanora-why-grid {
+    display: grid !important;
+
+    width: 100% !important;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 20px !important;
+
+    direction: rtl !important;
+
+    align-items: stretch !important;
+
+    justify-content: stretch !important;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+html[dir="rtl"] .home-2-page .elanora-why-card {
+    position: relative !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    min-height: 285px !important;
+
+    margin: 0 !important;
+
+    padding: 32px 25px !important;
+
+    overflow: hidden !important;
+
+    direction: rtl !important;
+
+    text-align: right !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: flex-end !important;
+    justify-content: flex-start !important;
+}
+
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+html[dir="rtl"] .home-2-page .elanora-why-number {
+    position: absolute !important;
+
+    top: 20px !important;
+    left: 20px !important;
+    right: auto !important;
+
+    z-index: 1 !important;
+
+    direction: ltr !important;
+
+    text-align: left !important;
+
+    white-space: nowrap !important;
+
+    pointer-events: none !important;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+html[dir="rtl"] .home-2-page .elanora-why-icon {
+    position: relative !important;
+
+    z-index: 3 !important;
+
+    flex: 0 0 auto !important;
+
+    width: 58px !important;
+    height: 58px !important;
+
+    margin: 0 0 28px auto !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    direction: ltr !important;
+
+    text-align: center !important;
+}
+
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+html[dir="rtl"] .home-2-page .elanora-why-card h3 {
+    position: relative !important;
+
+    z-index: 3 !important;
+
+    width: 100% !important;
+
+    margin: 0 0 14px !important;
+    padding: 0 !important;
+
+    text-align: right !important;
+
+    direction: rtl !important;
+
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+}
+
+
+/* =========================================================
+   CARD PARAGRAPH
+   ========================================================= */
+
+html[dir="rtl"] .home-2-page .elanora-why-card p {
+    position: relative !important;
+
+    z-index: 3 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-align: right !important;
+
+    direction: rtl !important;
+
+    white-space: normal !important;
+
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+
+    line-height: 1.7 !important;
+}
+
+
+/* =========================================================
+   TABLET — iPAD / iPAD MINI / iPAD PRO
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    html[dir="rtl"] .home-2-page .elanora-why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 20px !important;
+    }
+
+
+    html[dir="rtl"] .home-2-page .elanora-why-card {
+        min-height: 270px !important;
+
+        padding: 28px 24px !important;
+    }
+
+
+    html[dir="rtl"] .home-2-page .elanora-why-icon {
+        margin-bottom: 22px !important;
+    }
+
+
+    html[dir="rtl"] .home-2-page .elanora-why-card h3 {
+        margin-bottom: 12px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .home-2-page .elanora-why-section {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+
+    html[dir="rtl"] .home-2-page .elanora-why-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+
+    html[dir="rtl"] .home-2-page .elanora-why-grid {
+        grid-template-columns: 1fr !important;
+
+        gap: 15px !important;
+    }
+
+
+    html[dir="rtl"] .home-2-page .elanora-why-card {
+        width: 100% !important;
+        min-height: auto !important;
+
+        padding: 30px 25px !important;
+    }
+
+
+    html[dir="rtl"] .home-2-page .elanora-why-number {
+        top: 18px !important;
+        left: 18px !important;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    html[dir="rtl"] .home-2-page .elanora-why-card {
+        padding: 28px 22px !important;
+    }
+
+
+    html[dir="rtl"] .home-2-page .elanora-why-icon {
+        width: 54px !important;
+        height: 54px !important;
+
+        margin-bottom: 20px !important;
+    }
+
+
+    html[dir="rtl"] .home-2-page .elanora-why-card h3 {
+        font-size: 21px !important;
     }
 }

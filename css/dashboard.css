@@ -27,6 +27,7 @@
 
     /* Layout */
     --container-width: 1200px;
+    --container-gutter: 24px;
     --section-padding: 100px;
 
     /* Border Radius */
@@ -193,7 +194,7 @@ h6 {
     margin: 0;
     padding: 0;
     font-family: var(--heading-font);
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.2;
     color: var(--primary-color);
 }
@@ -231,6 +232,7 @@ h6 {
 
 p {
     margin: 0 0 15px;
+    font-weight: 400;
 }
 
 
@@ -272,8 +274,7 @@ select {
     width: 100%;
     max-width: var(--container-width);
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-inline: var(--container-gutter);
 }
 
 
@@ -494,8 +495,7 @@ select {
     }
 
     .container {
-        padding-left: 16px;
-        padding-right: 16px;
+        --container-gutter: 16px;
     }
 
     .btn {
@@ -23578,6 +23578,101 @@ body.elanora-dashboard-body.dark-mode .elanora-message-overview-content p {
     color: #bcaeb6 !important;
 }
 
+/* =========================================================
+   STANDARD BODY PARAGRAPHS
+   Home 1 reference: 16px desktop, 15px mobile
+   ========================================================= */
+
+body.elanora-dashboard-body .elanora-logout-modal-card p,
+body.elanora-dashboard-body .elanora-overview-event-main>p,
+body.elanora-dashboard-body .elanora-action-card p,
+body.elanora-dashboard-body .elanora-upcoming-heading p,
+body.elanora-dashboard-body .elanora-upcoming-content p,
+body.elanora-dashboard-body .elanora-event-profile-cover p,
+body.elanora-dashboard-body .elanora-event-venue-card p,
+body.elanora-dashboard-body .elanora-celebration-info p,
+body.elanora-dashboard-body .elanora-coordinator-intro p,
+body.elanora-dashboard-body .elanora-coordinator-person p,
+body.elanora-dashboard-body .elanora-theme-current-content>p,
+body.elanora-dashboard-body .elanora-theme-section-heading>p,
+body.elanora-dashboard-body .elanora-theme-option-content p,
+body.elanora-dashboard-body .elanora-theme-details-heading p,
+body.elanora-dashboard-body .elanora-theme-detail-card p,
+body.elanora-dashboard-body .elanora-theme-approval-content p,
+body.elanora-dashboard-body .elanora-vendor-overview-content p,
+body.elanora-dashboard-body .elanora-vendor-section-heading>p,
+body.elanora-dashboard-body .elanora-vendor-card p,
+body.elanora-dashboard-body .elanora-vendor-service-content>p,
+body.elanora-dashboard-body .elanora-vendor-coordination-main>p,
+body.elanora-dashboard-body .elanora-vendor-coordinator-card p,
+body.elanora-dashboard-body .elanora-timeline-overview-main p,
+body.elanora-dashboard-body .elanora-timeline-section-heading>p,
+body.elanora-dashboard-body .elanora-main-timeline-content p,
+body.elanora-dashboard-body .elanora-deadline-card p,
+body.elanora-dashboard-body .elanora-event-day-intro p,
+body.elanora-dashboard-body .elanora-event-day-info p,
+body.elanora-dashboard-body .elanora-payment-overview-intro p,
+body.elanora-dashboard-body .elanora-payment-progress-note p,
+body.elanora-dashboard-body .elanora-invoice-heading p,
+body.elanora-dashboard-body .elanora-invoice-info p,
+body.elanora-dashboard-body .elanora-payment-schedule-intro p,
+body.elanora-dashboard-body .elanora-payment-history-content p,
+body.elanora-dashboard-body .elanora-message-overview-content p,
+body.elanora-dashboard-body .elanora-message-section-heading>p,
+body.elanora-dashboard-body .elanora-conversation-info p,
+body.elanora-dashboard-body .elanora-message-person p,
+body.elanora-dashboard-body .elanora-chat-message p,
+body.elanora-dashboard-body .elanora-update-card p {
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+
+    body.elanora-dashboard-body .elanora-logout-modal-card p,
+    body.elanora-dashboard-body .elanora-overview-event-main>p,
+    body.elanora-dashboard-body .elanora-action-card p,
+    body.elanora-dashboard-body .elanora-upcoming-heading p,
+    body.elanora-dashboard-body .elanora-upcoming-content p,
+    body.elanora-dashboard-body .elanora-event-profile-cover p,
+    body.elanora-dashboard-body .elanora-event-venue-card p,
+    body.elanora-dashboard-body .elanora-celebration-info p,
+    body.elanora-dashboard-body .elanora-coordinator-intro p,
+    body.elanora-dashboard-body .elanora-coordinator-person p,
+    body.elanora-dashboard-body .elanora-theme-current-content>p,
+    body.elanora-dashboard-body .elanora-theme-section-heading>p,
+    body.elanora-dashboard-body .elanora-theme-option-content p,
+    body.elanora-dashboard-body .elanora-theme-details-heading p,
+    body.elanora-dashboard-body .elanora-theme-detail-card p,
+    body.elanora-dashboard-body .elanora-theme-approval-content p,
+    body.elanora-dashboard-body .elanora-vendor-overview-content p,
+    body.elanora-dashboard-body .elanora-vendor-section-heading>p,
+    body.elanora-dashboard-body .elanora-vendor-card p,
+    body.elanora-dashboard-body .elanora-vendor-service-content>p,
+    body.elanora-dashboard-body .elanora-vendor-coordination-main>p,
+    body.elanora-dashboard-body .elanora-vendor-coordinator-card p,
+    body.elanora-dashboard-body .elanora-timeline-overview-main p,
+    body.elanora-dashboard-body .elanora-timeline-section-heading>p,
+    body.elanora-dashboard-body .elanora-main-timeline-content p,
+    body.elanora-dashboard-body .elanora-deadline-card p,
+    body.elanora-dashboard-body .elanora-event-day-intro p,
+    body.elanora-dashboard-body .elanora-event-day-info p,
+    body.elanora-dashboard-body .elanora-payment-overview-intro p,
+    body.elanora-dashboard-body .elanora-payment-progress-note p,
+    body.elanora-dashboard-body .elanora-invoice-heading p,
+    body.elanora-dashboard-body .elanora-invoice-info p,
+    body.elanora-dashboard-body .elanora-payment-schedule-intro p,
+    body.elanora-dashboard-body .elanora-payment-history-content p,
+    body.elanora-dashboard-body .elanora-message-overview-content p,
+    body.elanora-dashboard-body .elanora-message-section-heading>p,
+    body.elanora-dashboard-body .elanora-conversation-info p,
+    body.elanora-dashboard-body .elanora-message-person p,
+    body.elanora-dashboard-body .elanora-chat-message p,
+    body.elanora-dashboard-body .elanora-update-card p {
+        font-size: 15px;
+    }
+
+}
+
 
 /* RIGHT STATS */
 
@@ -23697,4 +23792,323 @@ body.elanora-dashboard-body.dark-mode .elanora-message-overview-stats span {
 
         justify-self: center !important;
     }
+}
+
+/* =========================================================
+   LOGOUT — RED DANGER ACTION
+   ========================================================= */
+
+.elanora-dashboard-logout {
+    color: #E56B6F !important;
+    background-color: rgba(229, 107, 111, 0.08) !important;
+    border-color: rgba(229, 107, 111, 0.30) !important;
+}
+
+.elanora-dashboard-logout i {
+    color: #E56B6F !important;
+}
+
+.elanora-dashboard-logout:hover {
+    color: #FFFFFF !important;
+    background-color: #C94C50 !important;
+    border-color: #C94C50 !important;
+}
+
+.elanora-dashboard-logout:hover i {
+    color: #FFFFFF !important;
+}
+
+/* =========================================================
+   FINAL EXECUTION — LIGHT MODE CIRCLE FIX
+   ========================================================= */
+
+body.elanora-dashboard-body:not(.dark-mode) .elanora-planning-step:not(.completed):not(.active) .elanora-step-icon {
+    color: #4A3046 !important;
+    background-color: #F3E9E1 !important;
+    border: 1px solid #D8C8BF !important;
+}
+
+
+/* Make the empty circle clearly visible */
+body.elanora-dashboard-body:not(.dark-mode) .elanora-planning-step:not(.completed):not(.active) .elanora-step-icon i {
+    color: #4A3046 !important;
+}
+
+
+/* Dark mode remains unchanged */
+body.elanora-dashboard-body.dark-mode .elanora-planning-step:not(.completed):not(.active) .elanora-step-icon {
+    color: #BDAFB7 !important;
+    background-color: #30242C !important;
+    border: 1px solid #493943 !important;
+}
+
+/* =========================================================
+   RTL TIMELINE — FINAL LINE / ICON ALIGNMENT
+   RTL ONLY
+   ========================================================= */
+
+html[dir="rtl"] .elanora-main-timeline {
+    position: relative !important;
+    direction: rtl !important;
+}
+
+
+/* Vertical line — exactly through marker center */
+html[dir="rtl"] .elanora-main-timeline::before {
+    left: auto !important;
+    right: 21px !important;
+
+    top: 20px !important;
+    bottom: 25px !important;
+
+    width: 1px !important;
+
+    z-index: 0 !important;
+
+    transform: none !important;
+}
+
+
+/* Timeline item */
+html[dir="rtl"] .elanora-main-timeline-item {
+    direction: rtl !important;
+
+    grid-template-columns: 75px 100px minmax(0, 1fr) !important;
+
+    column-gap: 25px !important;
+
+    position: relative !important;
+}
+
+
+/* Marker — ABOVE the line */
+html[dir="rtl"] .elanora-main-timeline-marker {
+    position: relative !important;
+
+    z-index: 10 !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    margin: 0 !important;
+
+    justify-self: start !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    /* Important: line should never show through icon */
+    isolation: isolate !important;
+}
+
+
+/* Marker background must be solid */
+html[dir="rtl"] .elanora-main-timeline-item .elanora-main-timeline-marker {
+    background-color: var(--white) !important;
+}
+
+
+/* Completed / Active / Final markers */
+html[dir="rtl"] .elanora-main-timeline-item.completed .elanora-main-timeline-marker,
+html[dir="rtl"] .elanora-main-timeline-item.active .elanora-main-timeline-marker,
+html[dir="rtl"] .elanora-main-timeline-item.final .elanora-main-timeline-marker {
+    background-color: var(--secondary-color) !important;
+}
+
+
+/* Marker icon above everything */
+html[dir="rtl"] .elanora-main-timeline-marker i {
+    position: relative !important;
+    z-index: 11 !important;
+}
+
+
+/* Date */
+html[dir="rtl"] .elanora-main-timeline-date {
+    text-align: left !important;
+}
+
+
+/* Content */
+html[dir="rtl"] .elanora-main-timeline-content {
+    padding-left: 0 !important;
+    padding-right: 25px !important;
+
+    text-align: right !important;
+
+    direction: rtl !important;
+}
+
+/* =========================================================
+   RTL — PAYMENT HISTORY TIMELINE LINE
+   Strong override — RTL ONLY
+   ========================================================= */
+
+html[dir="rtl"] .elanora-payment-history {
+    position: relative !important;
+    direction: rtl !important;
+}
+
+
+/* Move vertical line from LEFT to RIGHT */
+html[dir="rtl"] .elanora-payment-history::before {
+    left: auto !important;
+    right: 22px !important;
+
+    top: 18px !important;
+    bottom: 18px !important;
+
+    width: 1px !important;
+
+    z-index: 0 !important;
+}
+
+
+/* Payment row stays RTL */
+html[dir="rtl"] .elanora-payment-history-item {
+    position: relative !important;
+
+    direction: rtl !important;
+
+    grid-template-columns: 45px 85px minmax(0, 1fr) auto !important;
+
+    gap: 15px !important;
+}
+
+
+/* Marker must sit above the vertical line */
+html[dir="rtl"] .elanora-payment-history-marker {
+    position: relative !important;
+
+    z-index: 5 !important;
+
+    justify-self: start !important;
+
+    isolation: isolate !important;
+}
+
+
+/* Keep date aligned correctly */
+html[dir="rtl"] .elanora-payment-history-date {
+    text-align: right !important;
+}
+
+
+/* Content alignment */
+html[dir="rtl"] .elanora-payment-history-content {
+    text-align: right !important;
+
+    direction: rtl !important;
+}
+
+
+/* Amount stays on the opposite side */
+html[dir="rtl"] .elanora-history-amount {
+    text-align: left !important;
+}
+
+/* =========================================================
+   RTL — EVENT DAY SCHEDULE TIMELINE
+   LINE ONLY FIX
+   DOTS MUST REMAIN VISIBLE
+   ========================================================= */
+
+html[dir="rtl"] .elanora-event-day-list {
+    position: relative !important;
+    direction: rtl !important;
+}
+
+
+/* -----------------------------------------
+   MOVE ONLY THE VERTICAL LINE TO RTL SIDE
+   ----------------------------------------- */
+
+html[dir="rtl"] .elanora-event-day-list::before {
+    left: auto !important;
+
+    /* Original line = 127px from left
+       RTL equivalent = 127px from right */
+    right: 127px !important;
+
+    top: 17px !important;
+    bottom: 17px !important;
+
+    width: 1px !important;
+
+    display: block !important;
+
+    background-color: rgba(255, 255, 255, 0.16) !important;
+
+    z-index: 0 !important;
+}
+
+
+/* -----------------------------------------
+   KEEP DOTS 100% VISIBLE
+   ----------------------------------------- */
+
+html[dir="rtl"] .elanora-event-day-dot {
+    position: relative !important;
+
+    display: block !important;
+
+    visibility: visible !important;
+
+    opacity: 1 !important;
+
+    z-index: 5 !important;
+
+    width: 12px !important;
+    height: 12px !important;
+
+    margin: 5px auto 0 !important;
+
+    background-color: var(--secondary-color) !important;
+
+    border: 3px solid var(--primary-color) !important;
+
+    border-radius: 50% !important;
+
+    box-shadow:
+        0 0 0 1px var(--secondary-color) !important;
+}
+
+
+/* -----------------------------------------
+   KEEP TIMELINE ITEMS IN SAME STRUCTURE
+   ----------------------------------------- */
+
+html[dir="rtl"] .elanora-event-day-item {
+    position: relative !important;
+
+    direction: rtl !important;
+
+    display: grid !important;
+
+    grid-template-columns: 90px 45px 1fr !important;
+
+    gap: 15px !important;
+}
+
+
+/* -----------------------------------------
+   TIME
+   ----------------------------------------- */
+
+html[dir="rtl"] .elanora-event-day-time {
+    text-align: left !important;
+
+    direction: ltr !important;
+}
+
+
+/* -----------------------------------------
+   EVENT CONTENT
+   ----------------------------------------- */
+
+html[dir="rtl"] .elanora-event-day-info {
+    text-align: right !important;
+
+    direction: rtl !important;
 }
