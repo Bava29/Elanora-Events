@@ -10923,24 +10923,25 @@ body.dark-mode .elanora-why-number {
 
 /* =========================================================
    HOVER TEXT
+   Light mode only. Dark mode gets its own readable hover colors below.
    ========================================================= */
 
-.contact-detail-card:hover .contact-detail-content h3 {
+body:not(.dark-mode) .contact-detail-card:hover .contact-detail-content h3 {
     color: var(--white);
 }
 
 
-.contact-detail-card:hover .contact-detail-content>a {
+body:not(.dark-mode) .contact-detail-card:hover .contact-detail-content>a {
     color: var(--secondary-color);
 }
 
 
-.contact-detail-card:hover .contact-detail-content address {
+body:not(.dark-mode) .contact-detail-card:hover .contact-detail-content address {
     color: var(--white);
 }
 
 
-.contact-detail-card:hover .contact-detail-content p {
+body:not(.dark-mode) .contact-detail-card:hover .contact-detail-content p {
     color: rgba(255, 255, 255, 0.72);
 }
 
@@ -14679,6 +14680,22 @@ body.dark-mode .contact-detail-content p {
 }
 
 body.dark-mode .contact-detail-content address {
+    color: #CFC1C9;
+}
+
+body.dark-mode .contact-detail-card:hover .contact-detail-content h3 {
+    color: #F5EAE3;
+}
+
+body.dark-mode .contact-detail-card:hover .contact-detail-content>a {
+    color: #E8C9A8;
+}
+
+body.dark-mode .contact-detail-card:hover .contact-detail-content address {
+    color: #F5EAE3;
+}
+
+body.dark-mode .contact-detail-card:hover .contact-detail-content p {
     color: #CFC1C9;
 }
 
