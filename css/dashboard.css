@@ -12,7 +12,7 @@
 
     /* Brand Colors */
     --primary-color: #4A3046;
-    --secondary-color: #E8C9A8;
+   --secondary-color: #C99A82;
 
     /* Neutral Colors */
     --white: #FFFFFF;
@@ -24642,3 +24642,4 @@ body.elanora-dashboard-body.dark-mode .elanora-event-day-snapshot .elanora-event
 body.elanora-dashboard-body.dark-mode .elanora-event-day-snapshot .elanora-event-day-snapshot-venue i {
     color: #E8C9A8 !important;
 }
+

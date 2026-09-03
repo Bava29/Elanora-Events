@@ -12,7 +12,7 @@
 
     /* Brand Colors */
     --primary-color: #4A3046;
-    --secondary-color: #E8C9A8;
+    --secondary-color: #C99A82;
 
     /* Neutral Colors */
     --white: #FFFFFF;
@@ -29278,4 +29278,80 @@ html.elanora-reveal-ready .elanora-footer .elanora-footer-bottom-links a {
 .elanora-about-belief-card p {
     margin: 0 !important;
     line-height: 1.7 !important;
+}
+
+
+/* =========================================================
+   HOME 1 — SECTION HEADINGS: CENTRED LAYOUT
+   ========================================================= */
+
+.experience-packages-head,
+.client-stories-intro,
+.events-gallery-heading,
+.event-journey-heading,
+.why-elanora-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.experience-packages-head h2,
+.client-stories-title h2,
+.events-gallery-heading h2,
+.event-journey-heading h2,
+.why-elanora-title h2 {
+    max-width: 100%;
+}
+
+.experience-packages-head p,
+.client-stories-description,
+.client-stories-description p,
+.events-gallery-heading p,
+.event-journey-heading p,
+.why-elanora-intro > p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.why-elanora-title {
+    max-width: 100%;
+    text-align: center;
+}
+
+/* =========================================================
+   CONTACT PAGE — SECTION 1 HEADING: CENTRED LAYOUT
+   ========================================================= */
+
+.contact-details-heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.contact-details-heading h2 {
+    max-width: 100%;
+}
+
+.contact-details-heading p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   FOOTER — TEXT ALIGNMENT FIX
+   ========================================================= */
+
+.elanora-footer-main {
+    align-items: start;
+}
+
+.elanora-footer-column h3 {
+    margin-top: 0;
+}
+
+.elanora-footer-contact {
+    max-width: 100%;
 }
